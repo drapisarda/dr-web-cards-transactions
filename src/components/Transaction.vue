@@ -16,7 +16,7 @@ defineProps({
     <div class="transaction__description basis-4/5">
       {{ description }}
     </div>
-    <div class="transaction__amount">
+    <div class="transaction__amount text-center basis-1/5">
       {{ amount.toString().replace('.', ',') }}€
     </div>
   </div>
