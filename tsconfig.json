@@ -1,6 +1,6 @@
 {
   "files": [],
-  "types": ["node"],
+  "types": ["node", "@/types/types"],
   "references": [
     {
       "path": "./tsconfig.node.json"
