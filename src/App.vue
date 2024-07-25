@@ -1,17 +1,20 @@
 <script setup lang="ts">
 import FilterTransaction from '@/components/FilterTransaction.vue';
 import TransactionList from '@/components/TransactionList.vue';
-import transactions from '@/data/transactions.json'
-import { getCards } from '@/utilities/utilities'
+import { getCards, getTransactions } from '@/utilities/utilities'
 import { onMounted, ref } from 'vue';
 import BankCardList from './components/BankCardList.vue';
+import type { Card, Transaction } from './types/types';
 
-let cards = ref()
+const cards = ref()
+const transactions = ref<Transaction[]>([])
+const selectedCard = ref<Card>()
 onMounted(async () => {
   cards.value = await getCards()
+  selectedCard.value = cards.value[0]
+  transactions.value = (selectedCard.value) ? await getTransactions(selectedCard.value.id) : []
 })
 
-const testData = transactions["lkmfkl-mlfkm-dlkfm"]
 </script>
 
 <template>
@@ -21,7 +24,7 @@ const testData = transactions["lkmfkl-mlfkm-dlkfm"]
   <main>
     <BankCardList :cards="cards" />
     <FilterTransaction> Amount filter </FilterTransaction>
-    <TransactionList :transactions="testData" />
+    <TransactionList :transactions="transactions" />
   </main>
 </template>
 
