@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import FilterTransaction from './components/FilterTransaction.vue';
 import TransactionList from './components/TransactionList.vue';
 </script>
 
@@ -7,6 +8,7 @@ import TransactionList from './components/TransactionList.vue';
   </header>
 
   <main>
+    <FilterTransaction> Amount filter </FilterTransaction>
     <TransactionList />
   </main>
 </template>
