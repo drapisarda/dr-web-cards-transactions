@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import FilterTransaction from './components/FilterTransaction.vue';
 import TransactionList from './components/TransactionList.vue';
+import transactions from '@/testdata/transactions.json'
+
+const testData = transactions["lkmfkl-mlfkm-dlkfm"]
 </script>
 
 <template>
@@ -9,7 +12,7 @@ import TransactionList from './components/TransactionList.vue';
 
   <main>
     <FilterTransaction> Amount filter </FilterTransaction>
-    <TransactionList />
+    <TransactionList :transactions="testData" />
   </main>
 </template>
 
