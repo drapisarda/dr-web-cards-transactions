@@ -7,9 +7,9 @@ const transactionList = transactions["lkmfkl-mlfkm-dlkfm"]
 </script>
 
 <template>
-  <div class="translation-list">
+  <div class="transaction-list">
     <div class="container">
-      <div class="translaction-list__item mb-5" v-for="(item) in transactionList" :key="item.id">
+      <div class="transaction-list__item mb-5" v-for="(item) in transactionList" :key="item.id">
         <Transaction :description="item.description" :amount="item.amount" />
       </div>
     </div>
