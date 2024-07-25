@@ -6,7 +6,7 @@ import { onMounted, ref } from 'vue';
 import BankCardList from './components/BankCardList.vue';
 import type { Card, Transaction } from './types/types';
 
-const cards = ref()
+const cards = ref<Card[]>()
 const transactions = ref<Transaction[]>([])
 const selectedCard = ref<Card>()
 onMounted(async () => {
@@ -15,6 +15,18 @@ onMounted(async () => {
   transactions.value = (selectedCard.value) ? await getTransactions(selectedCard.value.id) : []
 })
 
+const onCardSelected = async (cardId: string) => {
+  if (!cardId) throw new Error("Invalid card selected")
+
+  const availableCards = await getCards()
+  const selectedCard = availableCards.find(item => item.id === cardId)
+  //TODO is this check enough?
+  if (!selectedCard) throw new Error("Invalid card selected")
+
+  //TODO there should be a network latency management here
+  transactions.value = await getTransactions(cardId)
+}
+
 </script>
 
 <template>
@@ -22,7 +34,7 @@ onMounted(async () => {
   </header>
 
   <main>
-    <BankCardList :cards="cards" />
+    <BankCardList :cards="cards || []" :cardSelector="onCardSelected" />
     <FilterTransaction> Amount filter </FilterTransaction>
     <TransactionList :transactions="transactions" />
   </main>
