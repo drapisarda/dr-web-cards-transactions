@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { PropType } from 'vue';
-import { type CardType } from '../types/types'
 
 const props = defineProps({
   id: {
