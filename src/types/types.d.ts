@@ -11,4 +11,5 @@ export interface Transaction {
   amount: number;
 }
 
-export type CardType = 'private' | 'business' | 'hyper-business'
+// TODO for future implementation
+// export type CardType = 'private' | 'business' | 'hyper-business'
