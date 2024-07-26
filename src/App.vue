@@ -39,10 +39,10 @@ watch(filterAmount, debounce((newValue) => {
 <template>
   <header>
   </header>
-  <main class="py-5">
+  <main class="py-5 flex flex-col h-screen">
     <BankCardList :cards="cards" :cardSelector="selectCard" :selectedCardId="selectedCard?.id" />
     <FilterTransaction v-model="filterAmount"> Amount filter
     </FilterTransaction>
-    <TransactionList :transactions="transactions" />
+    <TransactionList class="flex-1 overflow-scroll md:overflow-auto" :transactions="transactions" />
   </main>
 </template>
