@@ -6,8 +6,6 @@ export default async function getTransactions(cardId: string, amountFilterValue:
     throw new Error("Invalid card selected")
   }
   
-  console.log(amountFilterValue)
-
   const amountAsNumber = Number(amountFilterValue)
 
   if (isNaN(amountAsNumber)) throw new Error("Invalid filter amount")
