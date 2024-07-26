@@ -40,7 +40,7 @@ watch(filterAmount, debounce((newValue) => {
   <header>
   </header>
   <main class="py-5">
-    <BankCardList :cards="cards || []" :cardSelector="selectCard" />
+    <BankCardList :cards="cards" :cardSelector="selectCard" :selectedCardId="selectedCard?.id" />
     <FilterTransaction v-model="filterAmount"> Amount filter
     </FilterTransaction>
     <TransactionList :transactions="transactions" />
