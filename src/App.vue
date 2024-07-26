@@ -9,6 +9,7 @@ import type { Card, Transaction } from './types/types';
 const cards = ref<Card[]>()
 const transactions = ref<Transaction[]>([])
 const selectedCard = ref<Card>()
+
 onMounted(async () => {
   cards.value = await getCards()
   selectedCard.value = cards.value[0]
@@ -20,11 +21,28 @@ const onCardSelected = async (cardId: string) => {
 
   const availableCards = await getCards()
   const selectedCard = availableCards.find(item => item.id === cardId)
-  //TODO is this check enough?
-  if (!selectedCard) throw new Error("Invalid card selected")
 
-  //TODO there should be a network latency management here
+  //TODO is this check enough?
+  if (!selectedCard) {
+    transactions.value = []
+    throw new Error("Invalid card selected")
+  }
+
+  //TODO there should be a network latency in UI management here
   transactions.value = await getTransactions(cardId)
+}
+
+
+//TODO filter on apiRequest so api call with card+amount or complex filter
+const filterBehaviour = async ({ target }: { target: HTMLInputElement }) => {
+  const filterValue = Number(target.value.replace(',', '.'))
+  if (!selectedCard.value || isNaN(filterValue)) {
+    transactions.value = []
+    return
+  }
+
+  const allTransactions = await getTransactions(selectedCard.value.id)
+  transactions.value = allTransactions.filter(item => item.amount >= filterValue)
 }
 
 </script>
@@ -35,7 +53,7 @@ const onCardSelected = async (cardId: string) => {
 
   <main>
     <BankCardList :cards="cards || []" :cardSelector="onCardSelected" />
-    <FilterTransaction> Amount filter </FilterTransaction>
+    <FilterTransaction :onInput="filterBehaviour" :debounceDelay="300"> Amount filter </FilterTransaction>
     <TransactionList :transactions="transactions" />
   </main>
 </template>
