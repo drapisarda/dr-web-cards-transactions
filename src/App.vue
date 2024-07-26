@@ -1,16 +1,17 @@
 <script setup lang="ts">
-import { onBeforeMount, ref } from 'vue';
+import { onBeforeMount, ref, watch } from 'vue';
 import FilterTransaction from '@/components/FilterTransaction.vue';
 import TransactionList from '@/components/TransactionList.vue';
 import getCards, { getCard } from '@/composables/getCards'
 import getTransactions from './composables/getTransactions';
 import BankCardList from './components/BankCardList.vue';
 import type { Card, Transaction } from './types/types';
+import { debounce } from './composables/debounce';
 
 const cards = ref<Card[]>()
 const transactions = ref<Transaction[]>([])
 const selectedCard = ref<Card>()
-const filterAmount = ref<string>('0')
+const filterAmount = ref<number>()
 
 onBeforeMount(async () => {
   cards.value = await getCards()
@@ -23,10 +24,15 @@ const selectCard = async (cardId: string) => {
   await filterTransactions(filterAmount.value)
 }
 
-const filterTransactions = async (newAmount: string) => {
+const filterTransactions = async (newAmount: number | undefined) => {
   filterAmount.value = newAmount
+  if (!selectedCard || !selectedCard.value) return
   transactions.value = await getTransactions(selectedCard.value.id, filterAmount.value)
 }
+
+watch(filterAmount, debounce((newValue) => {
+  filterTransactions(newValue)
+}, 300))
 </script>
 
 <template>
@@ -34,7 +40,8 @@ const filterTransactions = async (newAmount: string) => {
   </header>
   <main>
     <BankCardList :cards="cards || []" :cardSelector="selectCard" />
-    <FilterTransaction :onInput="filterTransactions" :debounceDelay="300"> Amount filter </FilterTransaction>
+    <FilterTransaction v-model="filterAmount"> Amount filter
+    </FilterTransaction>
     <TransactionList :transactions="transactions" />
   </main>
 </template>

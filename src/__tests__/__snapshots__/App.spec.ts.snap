@@ -317,15 +317,12 @@ VueWrapper {
             "FilterTransaction": {
               "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/FilterTransaction.vue",
               "__name": "FilterTransaction",
+              "emits": [
+                "update:modelValue",
+              ],
               "props": {
-                "debounceDelay": {
-                  "default": 300,
-                  "type": [Function],
-                },
-                "onInput": {
-                  "default": [Function],
-                  "type": [Function],
-                },
+                "modelModifiers": {},
+                "modelValue": {},
               },
               "render": [Function],
               "setup": [Function],
@@ -349,7 +346,7 @@ VueWrapper {
               "_value": undefined,
               "dep": Map {
                 ReactiveEffect {
-                  "_depsLength": 2,
+                  "_depsLength": 3,
                   "_dirtyLevel": 0,
                   "_runnings": 0,
                   "_shouldSchedule": false,
@@ -358,6 +355,25 @@ VueWrapper {
                   "allowRecurse": true,
                   "deps": [
                     [Circular],
+                    Map {
+                      ReactiveEffect {
+                        "_depsLength": 1,
+                        "_dirtyLevel": 0,
+                        "_runnings": 0,
+                        "_shouldSchedule": false,
+                        "_trackId": 1,
+                        "active": true,
+                        "deps": [
+                          [Circular],
+                        ],
+                        "fn": [Function],
+                        "onTrack": undefined,
+                        "onTrigger": undefined,
+                        "scheduler": [Function],
+                        "trigger": [Function],
+                      } => 1,
+                      [Circular] => 1,
+                    },
                     Map {
                       [Circular] => 1,
                     },
@@ -373,9 +389,49 @@ VueWrapper {
             "filterAmount": RefImpl {
               "__v_isRef": true,
               "__v_isShallow": false,
-              "_rawValue": "0",
-              "_value": "0",
-              "dep": undefined,
+              "_rawValue": undefined,
+              "_value": undefined,
+              "dep": Map {
+                ReactiveEffect {
+                  "_depsLength": 1,
+                  "_dirtyLevel": 0,
+                  "_runnings": 0,
+                  "_shouldSchedule": false,
+                  "_trackId": 1,
+                  "active": true,
+                  "deps": [
+                    [Circular],
+                  ],
+                  "fn": [Function],
+                  "onTrack": undefined,
+                  "onTrigger": undefined,
+                  "scheduler": [Function],
+                  "trigger": [Function],
+                } => 1,
+                ReactiveEffect {
+                  "_depsLength": 3,
+                  "_dirtyLevel": 0,
+                  "_runnings": 0,
+                  "_shouldSchedule": false,
+                  "_trackId": 1,
+                  "active": true,
+                  "allowRecurse": true,
+                  "deps": [
+                    Map {
+                      [Circular] => 1,
+                    },
+                    [Circular],
+                    Map {
+                      [Circular] => 1,
+                    },
+                  ],
+                  "fn": [Function],
+                  "onTrack": undefined,
+                  "onTrigger": undefined,
+                  "scheduler": [Function],
+                  "trigger": [Function],
+                } => 1,
+              },
             },
             "filterTransactions": [Function],
             "selectCard": [Function],
@@ -393,7 +449,7 @@ VueWrapper {
               "_value": [],
               "dep": Map {
                 ReactiveEffect {
-                  "_depsLength": 2,
+                  "_depsLength": 3,
                   "_dirtyLevel": 0,
                   "_runnings": 0,
                   "_shouldSchedule": false,
@@ -402,6 +458,25 @@ VueWrapper {
                   "allowRecurse": true,
                   "deps": [
                     Map {
+                      [Circular] => 1,
+                    },
+                    Map {
+                      ReactiveEffect {
+                        "_depsLength": 1,
+                        "_dirtyLevel": 0,
+                        "_runnings": 0,
+                        "_shouldSchedule": false,
+                        "_trackId": 1,
+                        "active": true,
+                        "deps": [
+                          [Circular],
+                        ],
+                        "fn": [Function],
+                        "onTrack": undefined,
+                        "onTrigger": undefined,
+                        "scheduler": [Function],
+                        "trigger": [Function],
+                      } => 1,
                       [Circular] => 1,
                     },
                     [Circular],
@@ -418,7 +493,7 @@ VueWrapper {
           "directives": null,
           "ec": null,
           "effect": ReactiveEffect {
-            "_depsLength": 2,
+            "_depsLength": 3,
             "_dirtyLevel": 0,
             "_runnings": 0,
             "_shouldSchedule": false,
@@ -427,6 +502,25 @@ VueWrapper {
             "allowRecurse": true,
             "deps": [
               Map {
+                [Circular] => 1,
+              },
+              Map {
+                ReactiveEffect {
+                  "_depsLength": 1,
+                  "_dirtyLevel": 0,
+                  "_runnings": 0,
+                  "_shouldSchedule": false,
+                  "_trackId": 1,
+                  "active": true,
+                  "deps": [
+                    [Circular],
+                  ],
+                  "fn": [Function],
+                  "onTrack": undefined,
+                  "onTrigger": undefined,
+                  "scheduler": [Function],
+                  "trigger": [Function],
+                } => 1,
                 [Circular] => 1,
               },
               Map {
@@ -461,7 +555,9 @@ VueWrapper {
           "proxy": {},
           "refs": {},
           "render": [Function],
-          "renderCache": [],
+          "renderCache": [
+            [Function],
+          ],
           "root": [Circular],
           "rtc": null,
           "rtg": null,
@@ -471,7 +567,48 @@ VueWrapper {
             "detached": true,
             "effects": [
               ReactiveEffect {
-                "_depsLength": 2,
+                "_depsLength": 1,
+                "_dirtyLevel": 0,
+                "_runnings": 0,
+                "_shouldSchedule": false,
+                "_trackId": 1,
+                "active": true,
+                "deps": [
+                  Map {
+                    [Circular] => 1,
+                    ReactiveEffect {
+                      "_depsLength": 3,
+                      "_dirtyLevel": 0,
+                      "_runnings": 0,
+                      "_shouldSchedule": false,
+                      "_trackId": 1,
+                      "active": true,
+                      "allowRecurse": true,
+                      "deps": [
+                        Map {
+                          [Circular] => 1,
+                        },
+                        [Circular],
+                        Map {
+                          [Circular] => 1,
+                        },
+                      ],
+                      "fn": [Function],
+                      "onTrack": undefined,
+                      "onTrigger": undefined,
+                      "scheduler": [Function],
+                      "trigger": [Function],
+                    } => 1,
+                  },
+                ],
+                "fn": [Function],
+                "onTrack": undefined,
+                "onTrigger": undefined,
+                "scheduler": [Function],
+                "trigger": [Function],
+              },
+              ReactiveEffect {
+                "_depsLength": 3,
                 "_dirtyLevel": 0,
                 "_runnings": 0,
                 "_shouldSchedule": false,
@@ -480,6 +617,25 @@ VueWrapper {
                 "allowRecurse": true,
                 "deps": [
                   Map {
+                    [Circular] => 1,
+                  },
+                  Map {
+                    ReactiveEffect {
+                      "_depsLength": 1,
+                      "_dirtyLevel": 0,
+                      "_runnings": 0,
+                      "_shouldSchedule": false,
+                      "_trackId": 1,
+                      "active": true,
+                      "deps": [
+                        [Circular],
+                      ],
+                      "fn": [Function],
+                      "onTrack": undefined,
+                      "onTrigger": undefined,
+                      "scheduler": [Function],
+                      "trigger": [Function],
+                    } => 1,
                     [Circular] => 1,
                   },
                   Map {
@@ -521,15 +677,12 @@ VueWrapper {
             "FilterTransaction": {
               "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/FilterTransaction.vue",
               "__name": "FilterTransaction",
+              "emits": [
+                "update:modelValue",
+              ],
               "props": {
-                "debounceDelay": {
-                  "default": 300,
-                  "type": [Function],
-                },
-                "onInput": {
-                  "default": [Function],
-                  "type": [Function],
-                },
+                "modelModifiers": {},
+                "modelValue": {},
               },
               "render": [Function],
               "setup": [Function],
@@ -547,7 +700,7 @@ VueWrapper {
               "setup": [Function],
             },
             "cards": undefined,
-            "filterAmount": "0",
+            "filterAmount": undefined,
             "filterTransactions": [Function],
             "selectCard": [Function],
             "selectedCard": undefined,
@@ -1057,22 +1210,45 @@ VueWrapper {
                       "c": null,
                       "components": null,
                       "ctx": {
-                        "debounceDelay": 300,
-                        "onInput": [Function],
+                        "modelModifiers": undefined,
+                        "modelValue": undefined,
                       },
                       "da": null,
                       "data": {},
                       "devtoolsRawSetupState": {
-                        "manageInput": [Function],
-                        "props": {
-                          "debounceDelay": 300,
-                          "onInput": [Function],
+                        "model": CustomRefImpl {
+                          "__v_isRef": true,
+                          "_get": [Function],
+                          "_set": [Function],
+                          "dep": Map {
+                            ReactiveEffect {
+                              "_depsLength": 2,
+                              "_dirtyLevel": 0,
+                              "_runnings": 0,
+                              "_shouldSchedule": false,
+                              "_trackId": 1,
+                              "active": true,
+                              "allowRecurse": true,
+                              "deps": [
+                                Map {
+                                  [Circular] => 1,
+                                },
+                                [Circular],
+                              ],
+                              "fn": [Function],
+                              "onTrack": undefined,
+                              "onTrigger": undefined,
+                              "scheduler": [Function],
+                              "trigger": [Function],
+                            } => 1,
+                          },
+                          Symbol(Symbol.iterator): [Function],
                         },
                       },
                       "directives": null,
                       "ec": null,
                       "effect": ReactiveEffect {
-                        "_depsLength": 1,
+                        "_depsLength": 2,
                         "_dirtyLevel": 0,
                         "_runnings": 0,
                         "_shouldSchedule": false,
@@ -1080,6 +1256,9 @@ VueWrapper {
                         "active": true,
                         "allowRecurse": true,
                         "deps": [
+                          Map {
+                            [Circular] => 1,
+                          },
                           Map {
                             [Circular] => 1,
                           },
@@ -1091,9 +1270,11 @@ VueWrapper {
                         "trigger": [Function],
                       },
                       "emit": [Function],
-                      "emitsOptions": null,
+                      "emitsOptions": {
+                        "update:modelValue": null,
+                      },
                       "emitted": null,
-                      "exposeProxy": null,
+                      "exposeProxy": {},
                       "exposed": {},
                       "inheritAttrs": undefined,
                       "isDeactivated": false,
@@ -1103,34 +1284,27 @@ VueWrapper {
                       "next": null,
                       "parent": [Circular],
                       "props": {
-                        "debounceDelay": 300,
-                        "onInput": [Function],
+                        "modelModifiers": undefined,
+                        "modelValue": undefined,
                       },
                       "propsDefaults": {},
                       "propsOptions": [
                         {
-                          "debounceDelay": {
+                          "modelModifiers": {
                             "0": false,
                             "1": true,
-                            "default": 300,
-                            "type": [Function],
                           },
-                          "onInput": {
+                          "modelValue": {
                             "0": false,
                             "1": true,
-                            "default": [Function],
-                            "type": [Function],
                           },
                         },
-                        [
-                          "onInput",
-                          "debounceDelay",
-                        ],
+                        [],
                       ],
                       "provides": {},
                       "proxy": {
-                        "debounceDelay": 300,
-                        "onInput": [Function],
+                        "modelModifiers": undefined,
+                        "modelValue": undefined,
                       },
                       "refs": {},
                       "render": [Function],
@@ -1152,8 +1326,29 @@ VueWrapper {
                             "_shouldSchedule": false,
                             "_trackId": 1,
                             "active": true,
+                            "deps": [
+                              Map {
+                                [Circular] => 1,
+                              },
+                            ],
+                            "fn": [Function],
+                            "onTrack": undefined,
+                            "onTrigger": undefined,
+                            "scheduler": [Function],
+                            "trigger": [Function],
+                          },
+                          ReactiveEffect {
+                            "_depsLength": 2,
+                            "_dirtyLevel": 0,
+                            "_runnings": 0,
+                            "_shouldSchedule": false,
+                            "_trackId": 1,
+                            "active": true,
                             "allowRecurse": true,
                             "deps": [
+                              Map {
+                                [Circular] => 1,
+                              },
                               Map {
                                 [Circular] => 1,
                               },
@@ -1176,11 +1371,7 @@ VueWrapper {
                         },
                       },
                       "setupState": {
-                        "manageInput": [Function],
-                        "props": {
-                          "debounceDelay": 300,
-                          "onInput": [Function],
-                        },
+                        "model": undefined,
                       },
                       "slots": {
                         "default": [Function],
@@ -1307,7 +1498,21 @@ VueWrapper {
                                 "children": null,
                                 "component": null,
                                 "ctx": [Circular],
-                                "dirs": null,
+                                "dirs": [
+                                  {
+                                    "arg": undefined,
+                                    "dir": {
+                                      "beforeUpdate": [Function],
+                                      "created": [Function],
+                                      "getSSRProps": [Function],
+                                      "mounted": [Function],
+                                    },
+                                    "instance": {},
+                                    "modifiers": {},
+                                    "oldValue": undefined,
+                                    "value": undefined,
+                                  },
+                                ],
                                 "dynamicChildren": null,
                                 "dynamicProps": null,
                                 "el": <input
@@ -1317,11 +1522,11 @@ VueWrapper {
                                   type="number"
                                 />,
                                 "key": null,
-                                "patchFlag": 32,
+                                "patchFlag": 512,
                                 "props": {
                                   "class": "block w-full px-5 py-2 border-2 border-black rounded-md",
                                   "id": "search-input",
-                                  "onInput": [Function],
+                                  "onUpdate:modelValue": [Function],
                                   "placeholder": "Amount",
                                   "type": "number",
                                 },
@@ -1448,6 +1653,60 @@ VueWrapper {
                             "transition": null,
                             "type": Symbol(v-fgt),
                           },
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": null,
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": [
+                              {
+                                "arg": undefined,
+                                "dir": {
+                                  "beforeUpdate": [Function],
+                                  "created": [Function],
+                                  "getSSRProps": [Function],
+                                  "mounted": [Function],
+                                },
+                                "instance": {},
+                                "modifiers": {},
+                                "oldValue": undefined,
+                                "value": undefined,
+                              },
+                            ],
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el": <input
+                              class="block w-full px-5 py-2 border-2 border-black rounded-md"
+                              id="search-input"
+                              placeholder="Amount"
+                              type="number"
+                            />,
+                            "key": null,
+                            "patchFlag": 512,
+                            "props": {
+                              "class": "block w-full px-5 py-2 border-2 border-black rounded-md",
+                              "id": "search-input",
+                              "onUpdate:modelValue": [Function],
+                              "placeholder": "Amount",
+                              "type": "number",
+                            },
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 1,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "targetStart": null,
+                            "transition": null,
+                            "type": "input",
+                          },
                         ],
                         "dynamicProps": null,
                         "el": <div
@@ -1496,15 +1755,12 @@ VueWrapper {
                       "type": {
                         "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/FilterTransaction.vue",
                         "__name": "FilterTransaction",
+                        "emits": [
+                          "update:modelValue",
+                        ],
                         "props": {
-                          "debounceDelay": {
-                            "default": 300,
-                            "type": [Function],
-                          },
-                          "onInput": {
-                            "default": [Function],
-                            "type": [Function],
-                          },
+                          "modelModifiers": {},
+                          "modelValue": {},
                         },
                         "render": [Function],
                         "setup": [Function],
@@ -1519,7 +1775,9 @@ VueWrapper {
                     "ctx": [Circular],
                     "dirs": null,
                     "dynamicChildren": null,
-                    "dynamicProps": null,
+                    "dynamicProps": [
+                      "modelValue",
+                    ],
                     "el": <div
                       class="filter-transaction mb-20"
                     >
@@ -1543,10 +1801,10 @@ VueWrapper {
                       </div>
                     </div>,
                     "key": null,
-                    "patchFlag": 0,
+                    "patchFlag": 8,
                     "props": {
-                      "debounceDelay": 300,
-                      "onInput": [Function],
+                      "modelValue": undefined,
+                      "onUpdate:modelValue": [Function],
                     },
                     "ref": null,
                     "scopeId": null,
@@ -1563,15 +1821,12 @@ VueWrapper {
                     "type": {
                       "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/FilterTransaction.vue",
                       "__name": "FilterTransaction",
+                      "emits": [
+                        "update:modelValue",
+                      ],
                       "props": {
-                        "debounceDelay": {
-                          "default": 300,
-                          "type": [Function],
-                        },
-                        "onInput": {
-                          "default": [Function],
-                          "type": [Function],
-                        },
+                        "modelModifiers": {},
+                        "modelValue": {},
                       },
                       "render": [Function],
                       "setup": [Function],
@@ -2475,10 +2730,10 @@ VueWrapper {
                     "@@__IMMUTABLE_ITERABLE__@@": 0,
                     "@@__IMMUTABLE_RECORD__@@": 0,
                     "_isMockFunction": 0,
-                    "debounceDelay": 3,
                     "hasAttribute": 0,
+                    "modelModifiers": 3,
+                    "modelValue": 3,
                     "nodeType": 0,
-                    "onInput": 3,
                     "tagName": 0,
                     "toJSON": 0,
                     Symbol(Symbol.toStringTag): 0,
@@ -2524,22 +2779,45 @@ VueWrapper {
                   "c": null,
                   "components": null,
                   "ctx": {
-                    "debounceDelay": 300,
-                    "onInput": [Function],
+                    "modelModifiers": undefined,
+                    "modelValue": undefined,
                   },
                   "da": null,
                   "data": {},
                   "devtoolsRawSetupState": {
-                    "manageInput": [Function],
-                    "props": {
-                      "debounceDelay": 300,
-                      "onInput": [Function],
+                    "model": CustomRefImpl {
+                      "__v_isRef": true,
+                      "_get": [Function],
+                      "_set": [Function],
+                      "dep": Map {
+                        ReactiveEffect {
+                          "_depsLength": 2,
+                          "_dirtyLevel": 0,
+                          "_runnings": 0,
+                          "_shouldSchedule": false,
+                          "_trackId": 1,
+                          "active": true,
+                          "allowRecurse": true,
+                          "deps": [
+                            Map {
+                              [Circular] => 1,
+                            },
+                            [Circular],
+                          ],
+                          "fn": [Function],
+                          "onTrack": undefined,
+                          "onTrigger": undefined,
+                          "scheduler": [Function],
+                          "trigger": [Function],
+                        } => 1,
+                      },
+                      Symbol(Symbol.iterator): [Function],
                     },
                   },
                   "directives": null,
                   "ec": null,
                   "effect": ReactiveEffect {
-                    "_depsLength": 1,
+                    "_depsLength": 2,
                     "_dirtyLevel": 0,
                     "_runnings": 0,
                     "_shouldSchedule": false,
@@ -2547,6 +2825,9 @@ VueWrapper {
                     "active": true,
                     "allowRecurse": true,
                     "deps": [
+                      Map {
+                        [Circular] => 1,
+                      },
                       Map {
                         [Circular] => 1,
                       },
@@ -2558,9 +2839,11 @@ VueWrapper {
                     "trigger": [Function],
                   },
                   "emit": [Function],
-                  "emitsOptions": null,
+                  "emitsOptions": {
+                    "update:modelValue": null,
+                  },
                   "emitted": null,
-                  "exposeProxy": null,
+                  "exposeProxy": {},
                   "exposed": {},
                   "inheritAttrs": undefined,
                   "isDeactivated": false,
@@ -2570,34 +2853,27 @@ VueWrapper {
                   "next": null,
                   "parent": [Circular],
                   "props": {
-                    "debounceDelay": 300,
-                    "onInput": [Function],
+                    "modelModifiers": undefined,
+                    "modelValue": undefined,
                   },
                   "propsDefaults": {},
                   "propsOptions": [
                     {
-                      "debounceDelay": {
+                      "modelModifiers": {
                         "0": false,
                         "1": true,
-                        "default": 300,
-                        "type": [Function],
                       },
-                      "onInput": {
+                      "modelValue": {
                         "0": false,
                         "1": true,
-                        "default": [Function],
-                        "type": [Function],
                       },
                     },
-                    [
-                      "onInput",
-                      "debounceDelay",
-                    ],
+                    [],
                   ],
                   "provides": {},
                   "proxy": {
-                    "debounceDelay": 300,
-                    "onInput": [Function],
+                    "modelModifiers": undefined,
+                    "modelValue": undefined,
                   },
                   "refs": {},
                   "render": [Function],
@@ -2619,8 +2895,29 @@ VueWrapper {
                         "_shouldSchedule": false,
                         "_trackId": 1,
                         "active": true,
+                        "deps": [
+                          Map {
+                            [Circular] => 1,
+                          },
+                        ],
+                        "fn": [Function],
+                        "onTrack": undefined,
+                        "onTrigger": undefined,
+                        "scheduler": [Function],
+                        "trigger": [Function],
+                      },
+                      ReactiveEffect {
+                        "_depsLength": 2,
+                        "_dirtyLevel": 0,
+                        "_runnings": 0,
+                        "_shouldSchedule": false,
+                        "_trackId": 1,
+                        "active": true,
                         "allowRecurse": true,
                         "deps": [
+                          Map {
+                            [Circular] => 1,
+                          },
                           Map {
                             [Circular] => 1,
                           },
@@ -2643,11 +2940,7 @@ VueWrapper {
                     },
                   },
                   "setupState": {
-                    "manageInput": [Function],
-                    "props": {
-                      "debounceDelay": 300,
-                      "onInput": [Function],
-                    },
+                    "model": undefined,
                   },
                   "slots": {
                     "default": [Function],
@@ -2774,7 +3067,21 @@ VueWrapper {
                             "children": null,
                             "component": null,
                             "ctx": [Circular],
-                            "dirs": null,
+                            "dirs": [
+                              {
+                                "arg": undefined,
+                                "dir": {
+                                  "beforeUpdate": [Function],
+                                  "created": [Function],
+                                  "getSSRProps": [Function],
+                                  "mounted": [Function],
+                                },
+                                "instance": {},
+                                "modifiers": {},
+                                "oldValue": undefined,
+                                "value": undefined,
+                              },
+                            ],
                             "dynamicChildren": null,
                             "dynamicProps": null,
                             "el": <input
@@ -2784,11 +3091,11 @@ VueWrapper {
                               type="number"
                             />,
                             "key": null,
-                            "patchFlag": 32,
+                            "patchFlag": 512,
                             "props": {
                               "class": "block w-full px-5 py-2 border-2 border-black rounded-md",
                               "id": "search-input",
-                              "onInput": [Function],
+                              "onUpdate:modelValue": [Function],
                               "placeholder": "Amount",
                               "type": "number",
                             },
@@ -2915,6 +3222,60 @@ VueWrapper {
                         "transition": null,
                         "type": Symbol(v-fgt),
                       },
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": null,
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": [
+                          {
+                            "arg": undefined,
+                            "dir": {
+                              "beforeUpdate": [Function],
+                              "created": [Function],
+                              "getSSRProps": [Function],
+                              "mounted": [Function],
+                            },
+                            "instance": {},
+                            "modifiers": {},
+                            "oldValue": undefined,
+                            "value": undefined,
+                          },
+                        ],
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <input
+                          class="block w-full px-5 py-2 border-2 border-black rounded-md"
+                          id="search-input"
+                          placeholder="Amount"
+                          type="number"
+                        />,
+                        "key": null,
+                        "patchFlag": 512,
+                        "props": {
+                          "class": "block w-full px-5 py-2 border-2 border-black rounded-md",
+                          "id": "search-input",
+                          "onUpdate:modelValue": [Function],
+                          "placeholder": "Amount",
+                          "type": "number",
+                        },
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 1,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "targetStart": null,
+                        "transition": null,
+                        "type": "input",
+                      },
                     ],
                     "dynamicProps": null,
                     "el": <div
@@ -2963,15 +3324,12 @@ VueWrapper {
                   "type": {
                     "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/FilterTransaction.vue",
                     "__name": "FilterTransaction",
+                    "emits": [
+                      "update:modelValue",
+                    ],
                     "props": {
-                      "debounceDelay": {
-                        "default": 300,
-                        "type": [Function],
-                      },
-                      "onInput": {
-                        "default": [Function],
-                        "type": [Function],
-                      },
+                      "modelModifiers": {},
+                      "modelValue": {},
                     },
                     "render": [Function],
                     "setup": [Function],
@@ -2986,7 +3344,9 @@ VueWrapper {
                 "ctx": [Circular],
                 "dirs": null,
                 "dynamicChildren": null,
-                "dynamicProps": null,
+                "dynamicProps": [
+                  "modelValue",
+                ],
                 "el": <div
                   class="filter-transaction mb-20"
                 >
@@ -3010,10 +3370,10 @@ VueWrapper {
                   </div>
                 </div>,
                 "key": null,
-                "patchFlag": 0,
+                "patchFlag": 8,
                 "props": {
-                  "debounceDelay": 300,
-                  "onInput": [Function],
+                  "modelValue": undefined,
+                  "onUpdate:modelValue": [Function],
                 },
                 "ref": null,
                 "scopeId": null,
@@ -3030,15 +3390,12 @@ VueWrapper {
                 "type": {
                   "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/FilterTransaction.vue",
                   "__name": "FilterTransaction",
+                  "emits": [
+                    "update:modelValue",
+                  ],
                   "props": {
-                    "debounceDelay": {
-                      "default": 300,
-                      "type": [Function],
-                    },
-                    "onInput": {
-                      "default": [Function],
-                      "type": [Function],
-                    },
+                    "modelModifiers": {},
+                    "modelValue": {},
                   },
                   "render": [Function],
                   "setup": [Function],
