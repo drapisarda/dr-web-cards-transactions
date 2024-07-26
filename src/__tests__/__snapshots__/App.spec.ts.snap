@@ -1,0 +1,3627 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > renders properly 1`] = `
+VueWrapper {
+  "__app": {
+    "_component": {
+      "name": "VTU_ROOT",
+      "render": [Function],
+      "setup": [Function],
+    },
+    "_container": <div
+      data-v-app=""
+    >
+      
+      <header />
+      <main>
+        <div
+          class="bank-card-list mb-7"
+        >
+          <div
+            class="container flex justify-between"
+          >
+            
+            
+          </div>
+        </div>
+        <div
+          class="filter-transaction mb-20"
+        >
+          <div
+            class="container"
+          >
+            <label
+              class="p-3 block font-semibold"
+              for="search-input"
+            >
+              
+               Amount filter 
+              
+            </label>
+            <input
+              class="block w-full px-5 py-2 border-2 border-black rounded-md"
+              id="search-input"
+              placeholder="Amount"
+              type="number"
+            />
+          </div>
+        </div>
+        <div
+          class="transaction-list"
+        >
+          <div
+            class="container"
+          >
+            
+            
+          </div>
+        </div>
+      </main>
+      
+    </div>,
+    "_context": {
+      "app": [Circular],
+      "components": {
+        "transition": {
+          "name": "transition",
+        },
+        "transition-group": {
+          "name": "transition-group",
+        },
+      },
+      "config": {
+        "compilerOptions": {},
+        "errorHandler": undefined,
+        "globalProperties": {},
+        "isNativeTag": [Function],
+        "optionMergeStrategies": {},
+        "performance": false,
+        "warnHandler": undefined,
+      },
+      "directives": {},
+      "emitsCache": WeakMap {},
+      "mixins": [
+        {
+          "beforeCreate": [Function],
+        },
+      ],
+      "optionsCache": WeakMap {},
+      "propsCache": WeakMap {},
+      "provides": {},
+      "reload": [Function],
+    },
+    "_instance": {
+      "a": null,
+      "accessCache": {},
+      "appContext": {
+        "app": [Circular],
+        "components": {
+          "transition": {
+            "name": "transition",
+          },
+          "transition-group": {
+            "name": "transition-group",
+          },
+        },
+        "config": {
+          "compilerOptions": {},
+          "errorHandler": undefined,
+          "globalProperties": {},
+          "isNativeTag": [Function],
+          "optionMergeStrategies": {},
+          "performance": false,
+          "warnHandler": undefined,
+        },
+        "directives": {},
+        "emitsCache": WeakMap {},
+        "mixins": [
+          {
+            "beforeCreate": [Function],
+          },
+        ],
+        "optionsCache": WeakMap {},
+        "propsCache": WeakMap {},
+        "provides": {},
+        "reload": [Function],
+      },
+      "asyncDep": null,
+      "asyncResolved": false,
+      "attrs": {},
+      "bc": null,
+      "bm": null,
+      "bu": null,
+      "bum": null,
+      "c": null,
+      "components": null,
+      "ctx": {
+        "VTU_COMPONENT": {},
+      },
+      "da": null,
+      "data": {},
+      "devtoolsRawSetupState": {
+        "VTU_COMPONENT": RefImpl {
+          "__v_isRef": true,
+          "__v_isShallow": false,
+          "_rawValue": {},
+          "_value": {},
+          "dep": undefined,
+        },
+      },
+      "directives": null,
+      "ec": null,
+      "effect": ReactiveEffect {
+        "_depsLength": 3,
+        "_dirtyLevel": 0,
+        "_runnings": 0,
+        "_shouldSchedule": false,
+        "_trackId": 1,
+        "active": true,
+        "allowRecurse": true,
+        "deps": [
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+        ],
+        "fn": [Function],
+        "onTrack": undefined,
+        "onTrigger": undefined,
+        "scheduler": [Function],
+        "trigger": [Function],
+      },
+      "emit": [Function],
+      "emitsOptions": null,
+      "emitted": null,
+      "exposeProxy": null,
+      "exposed": null,
+      "inheritAttrs": undefined,
+      "isDeactivated": false,
+      "isMounted": true,
+      "isUnmounted": false,
+      "m": null,
+      "next": null,
+      "parent": null,
+      "props": {},
+      "propsDefaults": {},
+      "propsOptions": [
+        {},
+        [],
+      ],
+      "provides": {},
+      "proxy": {
+        "VTU_COMPONENT": {},
+      },
+      "refs": {
+        "VTU_COMPONENT": {},
+      },
+      "render": [Function],
+      "renderCache": [],
+      "root": [Circular],
+      "rtc": null,
+      "rtg": null,
+      "scope": EffectScope {
+        "_active": true,
+        "cleanups": [],
+        "detached": true,
+        "effects": [
+          ReactiveEffect {
+            "_depsLength": 3,
+            "_dirtyLevel": 0,
+            "_runnings": 0,
+            "_shouldSchedule": false,
+            "_trackId": 1,
+            "active": true,
+            "allowRecurse": true,
+            "deps": [
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+            ],
+            "fn": [Function],
+            "onTrack": undefined,
+            "onTrigger": undefined,
+            "scheduler": [Function],
+            "trigger": [Function],
+          },
+        ],
+        "parent": undefined,
+      },
+      "setupContext": null,
+      "setupState": {
+        "VTU_COMPONENT": {},
+      },
+      "slots": {},
+      "sp": null,
+      "subTree": {
+        "__v_isVNode": true,
+        "__v_skip": true,
+        "anchor": null,
+        "appContext": null,
+        "children": null,
+        "component": {
+          "a": null,
+          "accessCache": {},
+          "appContext": {
+            "app": [Circular],
+            "components": {
+              "transition": {
+                "name": "transition",
+              },
+              "transition-group": {
+                "name": "transition-group",
+              },
+            },
+            "config": {
+              "compilerOptions": {},
+              "errorHandler": undefined,
+              "globalProperties": {},
+              "isNativeTag": [Function],
+              "optionMergeStrategies": {},
+              "performance": false,
+              "warnHandler": undefined,
+            },
+            "directives": {},
+            "emitsCache": WeakMap {},
+            "mixins": [
+              {
+                "beforeCreate": [Function],
+              },
+            ],
+            "optionsCache": WeakMap {},
+            "propsCache": WeakMap {},
+            "provides": {},
+            "reload": [Function],
+          },
+          "asyncDep": null,
+          "asyncResolved": false,
+          "attrs": {},
+          "bc": null,
+          "bm": [
+            [Function],
+          ],
+          "bu": null,
+          "bum": null,
+          "c": null,
+          "components": {},
+          "ctx": {},
+          "da": null,
+          "data": {},
+          "devtoolsRawSetupState": {
+            "BankCardList": {
+              "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/BankCardList.vue",
+              "__name": "BankCardList",
+              "props": {
+                "cardSelector": {
+                  "default": [Function],
+                  "type": [Function],
+                },
+                "cards": {
+                  "required": true,
+                  "type": [Function],
+                },
+              },
+              "render": [Function],
+              "setup": [Function],
+            },
+            "FilterTransaction": {
+              "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/FilterTransaction.vue",
+              "__name": "FilterTransaction",
+              "props": {
+                "debounceDelay": {
+                  "default": 300,
+                  "type": [Function],
+                },
+                "onInput": {
+                  "default": [Function],
+                  "type": [Function],
+                },
+              },
+              "render": [Function],
+              "setup": [Function],
+            },
+            "TransactionList": {
+              "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/TransactionList.vue",
+              "__name": "TransactionList",
+              "props": {
+                "transactions": {
+                  "required": true,
+                  "type": [Function],
+                },
+              },
+              "render": [Function],
+              "setup": [Function],
+            },
+            "cards": RefImpl {
+              "__v_isRef": true,
+              "__v_isShallow": false,
+              "_rawValue": undefined,
+              "_value": undefined,
+              "dep": Map {
+                ReactiveEffect {
+                  "_depsLength": 2,
+                  "_dirtyLevel": 0,
+                  "_runnings": 0,
+                  "_shouldSchedule": false,
+                  "_trackId": 1,
+                  "active": true,
+                  "allowRecurse": true,
+                  "deps": [
+                    [Circular],
+                    Map {
+                      [Circular] => 1,
+                    },
+                  ],
+                  "fn": [Function],
+                  "onTrack": undefined,
+                  "onTrigger": undefined,
+                  "scheduler": [Function],
+                  "trigger": [Function],
+                } => 1,
+              },
+            },
+            "filterAmount": RefImpl {
+              "__v_isRef": true,
+              "__v_isShallow": false,
+              "_rawValue": "0",
+              "_value": "0",
+              "dep": undefined,
+            },
+            "filterTransactions": [Function],
+            "selectCard": [Function],
+            "selectedCard": RefImpl {
+              "__v_isRef": true,
+              "__v_isShallow": false,
+              "_rawValue": undefined,
+              "_value": undefined,
+              "dep": undefined,
+            },
+            "transactions": RefImpl {
+              "__v_isRef": true,
+              "__v_isShallow": false,
+              "_rawValue": [],
+              "_value": [],
+              "dep": Map {
+                ReactiveEffect {
+                  "_depsLength": 2,
+                  "_dirtyLevel": 0,
+                  "_runnings": 0,
+                  "_shouldSchedule": false,
+                  "_trackId": 1,
+                  "active": true,
+                  "allowRecurse": true,
+                  "deps": [
+                    Map {
+                      [Circular] => 1,
+                    },
+                    [Circular],
+                  ],
+                  "fn": [Function],
+                  "onTrack": undefined,
+                  "onTrigger": undefined,
+                  "scheduler": [Function],
+                  "trigger": [Function],
+                } => 1,
+              },
+            },
+          },
+          "directives": null,
+          "ec": null,
+          "effect": ReactiveEffect {
+            "_depsLength": 2,
+            "_dirtyLevel": 0,
+            "_runnings": 0,
+            "_shouldSchedule": false,
+            "_trackId": 1,
+            "active": true,
+            "allowRecurse": true,
+            "deps": [
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+            ],
+            "fn": [Function],
+            "onTrack": undefined,
+            "onTrigger": undefined,
+            "scheduler": [Function],
+            "trigger": [Function],
+          },
+          "emit": [Function],
+          "emitsOptions": null,
+          "emitted": null,
+          "exposeProxy": {},
+          "exposed": {},
+          "inheritAttrs": undefined,
+          "isDeactivated": false,
+          "isMounted": true,
+          "isUnmounted": false,
+          "m": null,
+          "next": null,
+          "parent": [Circular],
+          "props": {},
+          "propsDefaults": {},
+          "propsOptions": [
+            {},
+            [],
+          ],
+          "provides": {},
+          "proxy": {},
+          "refs": {},
+          "render": [Function],
+          "renderCache": [],
+          "root": [Circular],
+          "rtc": null,
+          "rtg": null,
+          "scope": EffectScope {
+            "_active": true,
+            "cleanups": [],
+            "detached": true,
+            "effects": [
+              ReactiveEffect {
+                "_depsLength": 2,
+                "_dirtyLevel": 0,
+                "_runnings": 0,
+                "_shouldSchedule": false,
+                "_trackId": 1,
+                "active": true,
+                "allowRecurse": true,
+                "deps": [
+                  Map {
+                    [Circular] => 1,
+                  },
+                  Map {
+                    [Circular] => 1,
+                  },
+                ],
+                "fn": [Function],
+                "onTrack": undefined,
+                "onTrigger": undefined,
+                "scheduler": [Function],
+                "trigger": [Function],
+              },
+            ],
+            "parent": undefined,
+          },
+          "setupContext": {
+            "attrs": {},
+            "emit": [Function],
+            "expose": [Function],
+            "slots": {},
+          },
+          "setupState": {
+            "BankCardList": {
+              "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/BankCardList.vue",
+              "__name": "BankCardList",
+              "props": {
+                "cardSelector": {
+                  "default": [Function],
+                  "type": [Function],
+                },
+                "cards": {
+                  "required": true,
+                  "type": [Function],
+                },
+              },
+              "render": [Function],
+              "setup": [Function],
+            },
+            "FilterTransaction": {
+              "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/FilterTransaction.vue",
+              "__name": "FilterTransaction",
+              "props": {
+                "debounceDelay": {
+                  "default": 300,
+                  "type": [Function],
+                },
+                "onInput": {
+                  "default": [Function],
+                  "type": [Function],
+                },
+              },
+              "render": [Function],
+              "setup": [Function],
+            },
+            "TransactionList": {
+              "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/TransactionList.vue",
+              "__name": "TransactionList",
+              "props": {
+                "transactions": {
+                  "required": true,
+                  "type": [Function],
+                },
+              },
+              "render": [Function],
+              "setup": [Function],
+            },
+            "cards": undefined,
+            "filterAmount": "0",
+            "filterTransactions": [Function],
+            "selectCard": [Function],
+            "selectedCard": undefined,
+            "transactions": [],
+          },
+          "slots": {},
+          "sp": null,
+          "subTree": {
+            "__v_isVNode": true,
+            "__v_skip": true,
+            "anchor": ,
+            "appContext": null,
+            "children": [
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "ce": undefined,
+                "children": null,
+                "component": null,
+                "ctx": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <header />,
+                "key": null,
+                "patchFlag": -1,
+                "props": null,
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 1,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "targetStart": null,
+                "transition": null,
+                "type": "header",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": null,
+                    "component": {
+                      "a": null,
+                      "accessCache": {},
+                      "appContext": {
+                        "app": [Circular],
+                        "components": {
+                          "transition": {
+                            "name": "transition",
+                          },
+                          "transition-group": {
+                            "name": "transition-group",
+                          },
+                        },
+                        "config": {
+                          "compilerOptions": {},
+                          "errorHandler": undefined,
+                          "globalProperties": {},
+                          "isNativeTag": [Function],
+                          "optionMergeStrategies": {},
+                          "performance": false,
+                          "warnHandler": undefined,
+                        },
+                        "directives": {},
+                        "emitsCache": WeakMap {},
+                        "mixins": [
+                          {
+                            "beforeCreate": [Function],
+                          },
+                        ],
+                        "optionsCache": WeakMap {},
+                        "propsCache": WeakMap {},
+                        "provides": {},
+                        "reload": [Function],
+                      },
+                      "asyncDep": null,
+                      "asyncResolved": false,
+                      "attrs": {},
+                      "bc": null,
+                      "bm": null,
+                      "bu": null,
+                      "bum": null,
+                      "c": null,
+                      "components": null,
+                      "ctx": {
+                        "cardSelector": [Function],
+                        "cards": [],
+                      },
+                      "da": null,
+                      "data": {},
+                      "devtoolsRawSetupState": {
+                        "BankCard": {
+                          "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/BankCard.vue",
+                          "__name": "BankCard",
+                          "props": {
+                            "description": {
+                              "required": true,
+                              "type": [Function],
+                            },
+                            "id": {
+                              "required": true,
+                              "type": [Function],
+                            },
+                          },
+                          "render": [Function],
+                          "setup": [Function],
+                        },
+                      },
+                      "directives": null,
+                      "ec": null,
+                      "effect": ReactiveEffect {
+                        "_depsLength": 1,
+                        "_dirtyLevel": 0,
+                        "_runnings": 0,
+                        "_shouldSchedule": false,
+                        "_trackId": 1,
+                        "active": true,
+                        "allowRecurse": true,
+                        "deps": [
+                          Map {
+                            [Circular] => 1,
+                          },
+                        ],
+                        "fn": [Function],
+                        "onTrack": undefined,
+                        "onTrigger": undefined,
+                        "scheduler": [Function],
+                        "trigger": [Function],
+                      },
+                      "emit": [Function],
+                      "emitsOptions": null,
+                      "emitted": null,
+                      "exposeProxy": null,
+                      "exposed": {},
+                      "inheritAttrs": undefined,
+                      "isDeactivated": false,
+                      "isMounted": true,
+                      "isUnmounted": false,
+                      "m": null,
+                      "next": null,
+                      "parent": [Circular],
+                      "props": {
+                        "cardSelector": [Function],
+                        "cards": [],
+                      },
+                      "propsDefaults": {},
+                      "propsOptions": [
+                        {
+                          "cardSelector": {
+                            "0": false,
+                            "1": true,
+                            "default": [Function],
+                            "type": [Function],
+                          },
+                          "cards": {
+                            "0": false,
+                            "1": true,
+                            "required": true,
+                            "type": [Function],
+                          },
+                        },
+                        [
+                          "cardSelector",
+                        ],
+                      ],
+                      "provides": {},
+                      "proxy": {
+                        "cardSelector": [Function],
+                        "cards": [],
+                      },
+                      "refs": {},
+                      "render": [Function],
+                      "renderCache": [],
+                      "root": [Circular],
+                      "rtc": null,
+                      "rtg": null,
+                      "scope": EffectScope {
+                        "_active": true,
+                        "cleanups": [],
+                        "detached": true,
+                        "effects": [
+                          ReactiveEffect {
+                            "_depsLength": 1,
+                            "_dirtyLevel": 0,
+                            "_runnings": 0,
+                            "_shouldSchedule": false,
+                            "_trackId": 1,
+                            "active": true,
+                            "allowRecurse": true,
+                            "deps": [
+                              Map {
+                                [Circular] => 1,
+                              },
+                            ],
+                            "fn": [Function],
+                            "onTrack": undefined,
+                            "onTrigger": undefined,
+                            "scheduler": [Function],
+                            "trigger": [Function],
+                          },
+                        ],
+                        "parent": undefined,
+                      },
+                      "setupContext": {
+                        "attrs": {},
+                        "emit": [Function],
+                        "expose": [Function],
+                        "slots": {},
+                      },
+                      "setupState": {
+                        "BankCard": {
+                          "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/BankCard.vue",
+                          "__name": "BankCard",
+                          "props": {
+                            "description": {
+                              "required": true,
+                              "type": [Function],
+                            },
+                            "id": {
+                              "required": true,
+                              "type": [Function],
+                            },
+                          },
+                          "render": [Function],
+                          "setup": [Function],
+                        },
+                      },
+                      "slots": {},
+                      "sp": null,
+                      "subTree": {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": ,
+                                "appContext": null,
+                                "children": [],
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": [],
+                                "dynamicProps": null,
+                                "el": ,
+                                "key": null,
+                                "patchFlag": 128,
+                                "props": null,
+                                "ref": null,
+                                "scopeId": null,
+                                "shapeFlag": 16,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "targetStart": null,
+                                "transition": null,
+                                "type": Symbol(v-fgt),
+                              },
+                            ],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el": <div
+                              class="container flex justify-between"
+                            >
+                              
+                              
+                            </div>,
+                            "key": null,
+                            "patchFlag": 0,
+                            "props": {
+                              "class": "container flex justify-between",
+                            },
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 17,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "targetStart": null,
+                            "transition": null,
+                            "type": "div",
+                          },
+                        ],
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": ,
+                            "appContext": null,
+                            "children": [],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": [],
+                            "dynamicProps": null,
+                            "el": ,
+                            "key": null,
+                            "patchFlag": 128,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 16,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "targetStart": null,
+                            "transition": null,
+                            "type": Symbol(v-fgt),
+                          },
+                        ],
+                        "dynamicProps": null,
+                        "el": <div
+                          class="bank-card-list mb-7"
+                        >
+                          <div
+                            class="container flex justify-between"
+                          >
+                            
+                            
+                          </div>
+                        </div>,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": {
+                          "class": "bank-card-list mb-7",
+                        },
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 17,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "targetStart": null,
+                        "transition": null,
+                        "type": "div",
+                      },
+                      "suspense": null,
+                      "suspenseId": 0,
+                      "type": {
+                        "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/BankCardList.vue",
+                        "__name": "BankCardList",
+                        "props": {
+                          "cardSelector": {
+                            "default": [Function],
+                            "type": [Function],
+                          },
+                          "cards": {
+                            "required": true,
+                            "type": [Function],
+                          },
+                        },
+                        "render": [Function],
+                        "setup": [Function],
+                      },
+                      "u": null,
+                      "uid": 2,
+                      "um": null,
+                      "update": [Function],
+                      "vnode": [Circular],
+                      "withProxy": null,
+                    },
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": [
+                      "cards",
+                    ],
+                    "el": <div
+                      class="bank-card-list mb-7"
+                    >
+                      <div
+                        class="container flex justify-between"
+                      >
+                        
+                        
+                      </div>
+                    </div>,
+                    "key": null,
+                    "patchFlag": 8,
+                    "props": {
+                      "cardSelector": [Function],
+                      "cards": [],
+                    },
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 4,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "targetStart": null,
+                    "transition": null,
+                    "type": {
+                      "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/BankCardList.vue",
+                      "__name": "BankCardList",
+                      "props": {
+                        "cardSelector": {
+                          "default": [Function],
+                          "type": [Function],
+                        },
+                        "cards": {
+                          "required": true,
+                          "type": [Function],
+                        },
+                      },
+                      "render": [Function],
+                      "setup": [Function],
+                    },
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": {
+                      "_": 1,
+                      "default": [Function],
+                    },
+                    "component": {
+                      "a": null,
+                      "accessCache": {},
+                      "appContext": {
+                        "app": [Circular],
+                        "components": {
+                          "transition": {
+                            "name": "transition",
+                          },
+                          "transition-group": {
+                            "name": "transition-group",
+                          },
+                        },
+                        "config": {
+                          "compilerOptions": {},
+                          "errorHandler": undefined,
+                          "globalProperties": {},
+                          "isNativeTag": [Function],
+                          "optionMergeStrategies": {},
+                          "performance": false,
+                          "warnHandler": undefined,
+                        },
+                        "directives": {},
+                        "emitsCache": WeakMap {},
+                        "mixins": [
+                          {
+                            "beforeCreate": [Function],
+                          },
+                        ],
+                        "optionsCache": WeakMap {},
+                        "propsCache": WeakMap {},
+                        "provides": {},
+                        "reload": [Function],
+                      },
+                      "asyncDep": null,
+                      "asyncResolved": false,
+                      "attrs": {},
+                      "bc": null,
+                      "bm": null,
+                      "bu": null,
+                      "bum": null,
+                      "c": null,
+                      "components": null,
+                      "ctx": {
+                        "debounceDelay": 300,
+                        "onInput": [Function],
+                      },
+                      "da": null,
+                      "data": {},
+                      "devtoolsRawSetupState": {
+                        "manageInput": [Function],
+                        "props": {
+                          "debounceDelay": 300,
+                          "onInput": [Function],
+                        },
+                      },
+                      "directives": null,
+                      "ec": null,
+                      "effect": ReactiveEffect {
+                        "_depsLength": 1,
+                        "_dirtyLevel": 0,
+                        "_runnings": 0,
+                        "_shouldSchedule": false,
+                        "_trackId": 1,
+                        "active": true,
+                        "allowRecurse": true,
+                        "deps": [
+                          Map {
+                            [Circular] => 1,
+                          },
+                        ],
+                        "fn": [Function],
+                        "onTrack": undefined,
+                        "onTrigger": undefined,
+                        "scheduler": [Function],
+                        "trigger": [Function],
+                      },
+                      "emit": [Function],
+                      "emitsOptions": null,
+                      "emitted": null,
+                      "exposeProxy": null,
+                      "exposed": {},
+                      "inheritAttrs": undefined,
+                      "isDeactivated": false,
+                      "isMounted": true,
+                      "isUnmounted": false,
+                      "m": null,
+                      "next": null,
+                      "parent": [Circular],
+                      "props": {
+                        "debounceDelay": 300,
+                        "onInput": [Function],
+                      },
+                      "propsDefaults": {},
+                      "propsOptions": [
+                        {
+                          "debounceDelay": {
+                            "0": false,
+                            "1": true,
+                            "default": 300,
+                            "type": [Function],
+                          },
+                          "onInput": {
+                            "0": false,
+                            "1": true,
+                            "default": [Function],
+                            "type": [Function],
+                          },
+                        },
+                        [
+                          "onInput",
+                          "debounceDelay",
+                        ],
+                      ],
+                      "provides": {},
+                      "proxy": {
+                        "debounceDelay": 300,
+                        "onInput": [Function],
+                      },
+                      "refs": {},
+                      "render": [Function],
+                      "renderCache": [
+                        [Function],
+                      ],
+                      "root": [Circular],
+                      "rtc": null,
+                      "rtg": null,
+                      "scope": EffectScope {
+                        "_active": true,
+                        "cleanups": [],
+                        "detached": true,
+                        "effects": [
+                          ReactiveEffect {
+                            "_depsLength": 1,
+                            "_dirtyLevel": 0,
+                            "_runnings": 0,
+                            "_shouldSchedule": false,
+                            "_trackId": 1,
+                            "active": true,
+                            "allowRecurse": true,
+                            "deps": [
+                              Map {
+                                [Circular] => 1,
+                              },
+                            ],
+                            "fn": [Function],
+                            "onTrack": undefined,
+                            "onTrigger": undefined,
+                            "scheduler": [Function],
+                            "trigger": [Function],
+                          },
+                        ],
+                        "parent": undefined,
+                      },
+                      "setupContext": {
+                        "attrs": {},
+                        "emit": [Function],
+                        "expose": [Function],
+                        "slots": {
+                          "default": [Function],
+                        },
+                      },
+                      "setupState": {
+                        "manageInput": [Function],
+                        "props": {
+                          "debounceDelay": 300,
+                          "onInput": [Function],
+                        },
+                      },
+                      "slots": {
+                        "default": [Function],
+                      },
+                      "sp": null,
+                      "subTree": {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": [
+                                  {
+                                    "__v_isVNode": true,
+                                    "__v_skip": true,
+                                    "anchor": ,
+                                    "appContext": null,
+                                    "children": [
+                                      {
+                                        "__v_isVNode": true,
+                                        "__v_skip": true,
+                                        "anchor": null,
+                                        "appContext": null,
+                                        "children": " Amount filter ",
+                                        "component": null,
+                                        "ctx": [Circular],
+                                        "dirs": null,
+                                        "dynamicChildren": null,
+                                        "dynamicProps": null,
+                                        "el":  Amount filter ,
+                                        "key": null,
+                                        "patchFlag": 0,
+                                        "props": null,
+                                        "ref": null,
+                                        "scopeId": null,
+                                        "shapeFlag": 8,
+                                        "slotScopeIds": null,
+                                        "ssContent": null,
+                                        "ssFallback": null,
+                                        "staticCount": 0,
+                                        "suspense": null,
+                                        "target": null,
+                                        "targetAnchor": null,
+                                        "targetStart": null,
+                                        "transition": null,
+                                        "type": Symbol(v-txt),
+                                      },
+                                    ],
+                                    "component": null,
+                                    "ctx": [Circular],
+                                    "dirs": null,
+                                    "dynamicChildren": [],
+                                    "dynamicProps": null,
+                                    "el": ,
+                                    "key": "_default",
+                                    "patchFlag": 64,
+                                    "props": {
+                                      "key": "_default",
+                                    },
+                                    "ref": null,
+                                    "scopeId": null,
+                                    "shapeFlag": 16,
+                                    "slotScopeIds": null,
+                                    "ssContent": null,
+                                    "ssFallback": null,
+                                    "staticCount": 0,
+                                    "suspense": null,
+                                    "target": null,
+                                    "targetAnchor": null,
+                                    "targetStart": null,
+                                    "transition": null,
+                                    "type": Symbol(v-fgt),
+                                  },
+                                ],
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": null,
+                                "el": <label
+                                  class="p-3 block font-semibold"
+                                  for="search-input"
+                                >
+                                  
+                                   Amount filter 
+                                  
+                                </label>,
+                                "key": null,
+                                "patchFlag": 0,
+                                "props": {
+                                  "class": "p-3 block font-semibold",
+                                  "for": "search-input",
+                                },
+                                "ref": null,
+                                "scopeId": null,
+                                "shapeFlag": 17,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "targetStart": null,
+                                "transition": null,
+                                "type": "label",
+                              },
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": null,
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": null,
+                                "el": <input
+                                  class="block w-full px-5 py-2 border-2 border-black rounded-md"
+                                  id="search-input"
+                                  placeholder="Amount"
+                                  type="number"
+                                />,
+                                "key": null,
+                                "patchFlag": 32,
+                                "props": {
+                                  "class": "block w-full px-5 py-2 border-2 border-black rounded-md",
+                                  "id": "search-input",
+                                  "onInput": [Function],
+                                  "placeholder": "Amount",
+                                  "type": "number",
+                                },
+                                "ref": null,
+                                "scopeId": null,
+                                "shapeFlag": 1,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "targetStart": null,
+                                "transition": null,
+                                "type": "input",
+                              },
+                            ],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el": <div
+                              class="container"
+                            >
+                              <label
+                                class="p-3 block font-semibold"
+                                for="search-input"
+                              >
+                                
+                                 Amount filter 
+                                
+                              </label>
+                              <input
+                                class="block w-full px-5 py-2 border-2 border-black rounded-md"
+                                id="search-input"
+                                placeholder="Amount"
+                                type="number"
+                              />
+                            </div>,
+                            "key": null,
+                            "patchFlag": 0,
+                            "props": {
+                              "class": "container",
+                            },
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 17,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "targetStart": null,
+                            "transition": null,
+                            "type": "div",
+                          },
+                        ],
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": ,
+                            "appContext": null,
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": " Amount filter ",
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": null,
+                                "el":  Amount filter ,
+                                "key": null,
+                                "patchFlag": 0,
+                                "props": null,
+                                "ref": null,
+                                "scopeId": null,
+                                "shapeFlag": 8,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "targetStart": null,
+                                "transition": null,
+                                "type": Symbol(v-txt),
+                              },
+                            ],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": [],
+                            "dynamicProps": null,
+                            "el": ,
+                            "key": "_default",
+                            "patchFlag": 64,
+                            "props": {
+                              "key": "_default",
+                            },
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 16,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "targetStart": null,
+                            "transition": null,
+                            "type": Symbol(v-fgt),
+                          },
+                        ],
+                        "dynamicProps": null,
+                        "el": <div
+                          class="filter-transaction mb-20"
+                        >
+                          <div
+                            class="container"
+                          >
+                            <label
+                              class="p-3 block font-semibold"
+                              for="search-input"
+                            >
+                              
+                               Amount filter 
+                              
+                            </label>
+                            <input
+                              class="block w-full px-5 py-2 border-2 border-black rounded-md"
+                              id="search-input"
+                              placeholder="Amount"
+                              type="number"
+                            />
+                          </div>
+                        </div>,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": {
+                          "class": "filter-transaction mb-20",
+                        },
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 17,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "targetStart": null,
+                        "transition": null,
+                        "type": "div",
+                      },
+                      "suspense": null,
+                      "suspenseId": 0,
+                      "type": {
+                        "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/FilterTransaction.vue",
+                        "__name": "FilterTransaction",
+                        "props": {
+                          "debounceDelay": {
+                            "default": 300,
+                            "type": [Function],
+                          },
+                          "onInput": {
+                            "default": [Function],
+                            "type": [Function],
+                          },
+                        },
+                        "render": [Function],
+                        "setup": [Function],
+                      },
+                      "u": null,
+                      "uid": 3,
+                      "um": null,
+                      "update": [Function],
+                      "vnode": [Circular],
+                      "withProxy": null,
+                    },
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <div
+                      class="filter-transaction mb-20"
+                    >
+                      <div
+                        class="container"
+                      >
+                        <label
+                          class="p-3 block font-semibold"
+                          for="search-input"
+                        >
+                          
+                           Amount filter 
+                          
+                        </label>
+                        <input
+                          class="block w-full px-5 py-2 border-2 border-black rounded-md"
+                          id="search-input"
+                          placeholder="Amount"
+                          type="number"
+                        />
+                      </div>
+                    </div>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": {
+                      "debounceDelay": 300,
+                      "onInput": [Function],
+                    },
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 36,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "targetStart": null,
+                    "transition": null,
+                    "type": {
+                      "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/FilterTransaction.vue",
+                      "__name": "FilterTransaction",
+                      "props": {
+                        "debounceDelay": {
+                          "default": 300,
+                          "type": [Function],
+                        },
+                        "onInput": {
+                          "default": [Function],
+                          "type": [Function],
+                        },
+                      },
+                      "render": [Function],
+                      "setup": [Function],
+                    },
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": null,
+                    "component": {
+                      "a": null,
+                      "accessCache": {},
+                      "appContext": {
+                        "app": [Circular],
+                        "components": {
+                          "transition": {
+                            "name": "transition",
+                          },
+                          "transition-group": {
+                            "name": "transition-group",
+                          },
+                        },
+                        "config": {
+                          "compilerOptions": {},
+                          "errorHandler": undefined,
+                          "globalProperties": {},
+                          "isNativeTag": [Function],
+                          "optionMergeStrategies": {},
+                          "performance": false,
+                          "warnHandler": undefined,
+                        },
+                        "directives": {},
+                        "emitsCache": WeakMap {},
+                        "mixins": [
+                          {
+                            "beforeCreate": [Function],
+                          },
+                        ],
+                        "optionsCache": WeakMap {},
+                        "propsCache": WeakMap {},
+                        "provides": {},
+                        "reload": [Function],
+                      },
+                      "asyncDep": null,
+                      "asyncResolved": false,
+                      "attrs": {},
+                      "bc": null,
+                      "bm": null,
+                      "bu": null,
+                      "bum": null,
+                      "c": null,
+                      "components": null,
+                      "ctx": {
+                        "transactions": [],
+                      },
+                      "da": null,
+                      "data": {},
+                      "devtoolsRawSetupState": {
+                        "TransactionContent": {
+                          "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/TransactionContent.vue",
+                          "__name": "TransactionContent",
+                          "props": {
+                            "amount": {
+                              "required": true,
+                              "type": [Function],
+                            },
+                            "description": {
+                              "required": true,
+                              "type": [Function],
+                            },
+                          },
+                          "render": [Function],
+                          "setup": [Function],
+                        },
+                      },
+                      "directives": null,
+                      "ec": null,
+                      "effect": ReactiveEffect {
+                        "_depsLength": 2,
+                        "_dirtyLevel": 0,
+                        "_runnings": 0,
+                        "_shouldSchedule": false,
+                        "_trackId": 1,
+                        "active": true,
+                        "allowRecurse": true,
+                        "deps": [
+                          Map {
+                            [Circular] => 1,
+                          },
+                          Map {
+                            [Circular] => 1,
+                          },
+                        ],
+                        "fn": [Function],
+                        "onTrack": undefined,
+                        "onTrigger": undefined,
+                        "scheduler": [Function],
+                        "trigger": [Function],
+                      },
+                      "emit": [Function],
+                      "emitsOptions": null,
+                      "emitted": null,
+                      "exposeProxy": null,
+                      "exposed": {},
+                      "inheritAttrs": undefined,
+                      "isDeactivated": false,
+                      "isMounted": true,
+                      "isUnmounted": false,
+                      "m": null,
+                      "next": null,
+                      "parent": [Circular],
+                      "props": {
+                        "transactions": [],
+                      },
+                      "propsDefaults": {},
+                      "propsOptions": [
+                        {
+                          "transactions": {
+                            "0": false,
+                            "1": true,
+                            "required": true,
+                            "type": [Function],
+                          },
+                        },
+                        [],
+                      ],
+                      "provides": {},
+                      "proxy": {
+                        "transactions": [],
+                      },
+                      "refs": {},
+                      "render": [Function],
+                      "renderCache": [],
+                      "root": [Circular],
+                      "rtc": null,
+                      "rtg": null,
+                      "scope": EffectScope {
+                        "_active": true,
+                        "cleanups": [],
+                        "detached": true,
+                        "effects": [
+                          ReactiveEffect {
+                            "_depsLength": 2,
+                            "_dirtyLevel": 0,
+                            "_runnings": 0,
+                            "_shouldSchedule": false,
+                            "_trackId": 1,
+                            "active": true,
+                            "allowRecurse": true,
+                            "deps": [
+                              Map {
+                                [Circular] => 1,
+                              },
+                              Map {
+                                [Circular] => 1,
+                              },
+                            ],
+                            "fn": [Function],
+                            "onTrack": undefined,
+                            "onTrigger": undefined,
+                            "scheduler": [Function],
+                            "trigger": [Function],
+                          },
+                        ],
+                        "parent": undefined,
+                      },
+                      "setupContext": {
+                        "attrs": {},
+                        "emit": [Function],
+                        "expose": [Function],
+                        "slots": {},
+                      },
+                      "setupState": {
+                        "TransactionContent": {
+                          "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/TransactionContent.vue",
+                          "__name": "TransactionContent",
+                          "props": {
+                            "amount": {
+                              "required": true,
+                              "type": [Function],
+                            },
+                            "description": {
+                              "required": true,
+                              "type": [Function],
+                            },
+                          },
+                          "render": [Function],
+                          "setup": [Function],
+                        },
+                      },
+                      "slots": {},
+                      "sp": null,
+                      "subTree": {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": ,
+                                "appContext": null,
+                                "children": [],
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": [],
+                                "dynamicProps": null,
+                                "el": ,
+                                "key": null,
+                                "patchFlag": 128,
+                                "props": null,
+                                "ref": null,
+                                "scopeId": null,
+                                "shapeFlag": 16,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "targetStart": null,
+                                "transition": null,
+                                "type": Symbol(v-fgt),
+                              },
+                            ],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el": <div
+                              class="container"
+                            >
+                              
+                              
+                            </div>,
+                            "key": null,
+                            "patchFlag": 0,
+                            "props": {
+                              "class": "container",
+                            },
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 17,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "targetStart": null,
+                            "transition": null,
+                            "type": "div",
+                          },
+                        ],
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": ,
+                            "appContext": null,
+                            "children": [],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": [],
+                            "dynamicProps": null,
+                            "el": ,
+                            "key": null,
+                            "patchFlag": 128,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 16,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "targetStart": null,
+                            "transition": null,
+                            "type": Symbol(v-fgt),
+                          },
+                        ],
+                        "dynamicProps": null,
+                        "el": <div
+                          class="transaction-list"
+                        >
+                          <div
+                            class="container"
+                          >
+                            
+                            
+                          </div>
+                        </div>,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": {
+                          "class": "transaction-list",
+                        },
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 17,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "targetStart": null,
+                        "transition": null,
+                        "type": "div",
+                      },
+                      "suspense": null,
+                      "suspenseId": 0,
+                      "type": {
+                        "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/TransactionList.vue",
+                        "__name": "TransactionList",
+                        "props": {
+                          "transactions": {
+                            "required": true,
+                            "type": [Function],
+                          },
+                        },
+                        "render": [Function],
+                        "setup": [Function],
+                      },
+                      "u": null,
+                      "uid": 4,
+                      "um": null,
+                      "update": [Function],
+                      "vnode": [Circular],
+                      "withProxy": null,
+                    },
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": [
+                      "transactions",
+                    ],
+                    "el": <div
+                      class="transaction-list"
+                    >
+                      <div
+                        class="container"
+                      >
+                        
+                        
+                      </div>
+                    </div>,
+                    "key": null,
+                    "patchFlag": 8,
+                    "props": {
+                      "transactions": [],
+                    },
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 4,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "targetStart": null,
+                    "transition": null,
+                    "type": {
+                      "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/TransactionList.vue",
+                      "__name": "TransactionList",
+                      "props": {
+                        "transactions": {
+                          "required": true,
+                          "type": [Function],
+                        },
+                      },
+                      "render": [Function],
+                      "setup": [Function],
+                    },
+                  },
+                ],
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <main>
+                  <div
+                    class="bank-card-list mb-7"
+                  >
+                    <div
+                      class="container flex justify-between"
+                    >
+                      
+                      
+                    </div>
+                  </div>
+                  <div
+                    class="filter-transaction mb-20"
+                  >
+                    <div
+                      class="container"
+                    >
+                      <label
+                        class="p-3 block font-semibold"
+                        for="search-input"
+                      >
+                        
+                         Amount filter 
+                        
+                      </label>
+                      <input
+                        class="block w-full px-5 py-2 border-2 border-black rounded-md"
+                        id="search-input"
+                        placeholder="Amount"
+                        type="number"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="transaction-list"
+                  >
+                    <div
+                      class="container"
+                    >
+                      
+                      
+                    </div>
+                  </div>
+                </main>,
+                "key": null,
+                "patchFlag": 0,
+                "props": null,
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "targetStart": null,
+                "transition": null,
+                "type": "main",
+              },
+            ],
+            "component": null,
+            "ctx": [Circular],
+            "dirs": null,
+            "dynamicChildren": [
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": null,
+                "component": {
+                  "a": null,
+                  "accessCache": {
+                    "@@__IMMUTABLE_ITERABLE__@@": 0,
+                    "@@__IMMUTABLE_RECORD__@@": 0,
+                    "_isMockFunction": 0,
+                    "cardSelector": 3,
+                    "cards": 3,
+                    "hasAttribute": 0,
+                    "nodeType": 0,
+                    "tagName": 0,
+                    "toJSON": 0,
+                    Symbol(Symbol.toStringTag): 0,
+                  },
+                  "appContext": {
+                    "app": [Circular],
+                    "components": {
+                      "transition": {
+                        "name": "transition",
+                      },
+                      "transition-group": {
+                        "name": "transition-group",
+                      },
+                    },
+                    "config": {
+                      "compilerOptions": {},
+                      "errorHandler": undefined,
+                      "globalProperties": {},
+                      "isNativeTag": [Function],
+                      "optionMergeStrategies": {},
+                      "performance": false,
+                      "warnHandler": undefined,
+                    },
+                    "directives": {},
+                    "emitsCache": WeakMap {},
+                    "mixins": [
+                      {
+                        "beforeCreate": [Function],
+                      },
+                    ],
+                    "optionsCache": WeakMap {},
+                    "propsCache": WeakMap {},
+                    "provides": {},
+                    "reload": [Function],
+                  },
+                  "asyncDep": null,
+                  "asyncResolved": false,
+                  "attrs": {},
+                  "bc": null,
+                  "bm": null,
+                  "bu": null,
+                  "bum": null,
+                  "c": null,
+                  "components": null,
+                  "ctx": {
+                    "cardSelector": [Function],
+                    "cards": [],
+                  },
+                  "da": null,
+                  "data": {},
+                  "devtoolsRawSetupState": {
+                    "BankCard": {
+                      "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/BankCard.vue",
+                      "__name": "BankCard",
+                      "props": {
+                        "description": {
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "id": {
+                          "required": true,
+                          "type": [Function],
+                        },
+                      },
+                      "render": [Function],
+                      "setup": [Function],
+                    },
+                  },
+                  "directives": null,
+                  "ec": null,
+                  "effect": ReactiveEffect {
+                    "_depsLength": 1,
+                    "_dirtyLevel": 0,
+                    "_runnings": 0,
+                    "_shouldSchedule": false,
+                    "_trackId": 1,
+                    "active": true,
+                    "allowRecurse": true,
+                    "deps": [
+                      Map {
+                        [Circular] => 1,
+                      },
+                    ],
+                    "fn": [Function],
+                    "onTrack": undefined,
+                    "onTrigger": undefined,
+                    "scheduler": [Function],
+                    "trigger": [Function],
+                  },
+                  "emit": [Function],
+                  "emitsOptions": null,
+                  "emitted": null,
+                  "exposeProxy": null,
+                  "exposed": {},
+                  "inheritAttrs": undefined,
+                  "isDeactivated": false,
+                  "isMounted": true,
+                  "isUnmounted": false,
+                  "m": null,
+                  "next": null,
+                  "parent": [Circular],
+                  "props": {
+                    "cardSelector": [Function],
+                    "cards": [],
+                  },
+                  "propsDefaults": {},
+                  "propsOptions": [
+                    {
+                      "cardSelector": {
+                        "0": false,
+                        "1": true,
+                        "default": [Function],
+                        "type": [Function],
+                      },
+                      "cards": {
+                        "0": false,
+                        "1": true,
+                        "required": true,
+                        "type": [Function],
+                      },
+                    },
+                    [
+                      "cardSelector",
+                    ],
+                  ],
+                  "provides": {},
+                  "proxy": {
+                    "cardSelector": [Function],
+                    "cards": [],
+                  },
+                  "refs": {},
+                  "render": [Function],
+                  "renderCache": [],
+                  "root": [Circular],
+                  "rtc": null,
+                  "rtg": null,
+                  "scope": EffectScope {
+                    "_active": true,
+                    "cleanups": [],
+                    "detached": true,
+                    "effects": [
+                      ReactiveEffect {
+                        "_depsLength": 1,
+                        "_dirtyLevel": 0,
+                        "_runnings": 0,
+                        "_shouldSchedule": false,
+                        "_trackId": 1,
+                        "active": true,
+                        "allowRecurse": true,
+                        "deps": [
+                          Map {
+                            [Circular] => 1,
+                          },
+                        ],
+                        "fn": [Function],
+                        "onTrack": undefined,
+                        "onTrigger": undefined,
+                        "scheduler": [Function],
+                        "trigger": [Function],
+                      },
+                    ],
+                    "parent": undefined,
+                  },
+                  "setupContext": {
+                    "attrs": {},
+                    "emit": [Function],
+                    "expose": [Function],
+                    "slots": {},
+                  },
+                  "setupState": {
+                    "BankCard": {
+                      "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/BankCard.vue",
+                      "__name": "BankCard",
+                      "props": {
+                        "description": {
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "id": {
+                          "required": true,
+                          "type": [Function],
+                        },
+                      },
+                      "render": [Function],
+                      "setup": [Function],
+                    },
+                  },
+                  "slots": {},
+                  "sp": null,
+                  "subTree": {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": ,
+                            "appContext": null,
+                            "children": [],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": [],
+                            "dynamicProps": null,
+                            "el": ,
+                            "key": null,
+                            "patchFlag": 128,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 16,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "targetStart": null,
+                            "transition": null,
+                            "type": Symbol(v-fgt),
+                          },
+                        ],
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <div
+                          class="container flex justify-between"
+                        >
+                          
+                          
+                        </div>,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": {
+                          "class": "container flex justify-between",
+                        },
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 17,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "targetStart": null,
+                        "transition": null,
+                        "type": "div",
+                      },
+                    ],
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": ,
+                        "appContext": null,
+                        "children": [],
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": [],
+                        "dynamicProps": null,
+                        "el": ,
+                        "key": null,
+                        "patchFlag": 128,
+                        "props": null,
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 16,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "targetStart": null,
+                        "transition": null,
+                        "type": Symbol(v-fgt),
+                      },
+                    ],
+                    "dynamicProps": null,
+                    "el": <div
+                      class="bank-card-list mb-7"
+                    >
+                      <div
+                        class="container flex justify-between"
+                      >
+                        
+                        
+                      </div>
+                    </div>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": {
+                      "class": "bank-card-list mb-7",
+                    },
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "targetStart": null,
+                    "transition": null,
+                    "type": "div",
+                  },
+                  "suspense": null,
+                  "suspenseId": 0,
+                  "type": {
+                    "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/BankCardList.vue",
+                    "__name": "BankCardList",
+                    "props": {
+                      "cardSelector": {
+                        "default": [Function],
+                        "type": [Function],
+                      },
+                      "cards": {
+                        "required": true,
+                        "type": [Function],
+                      },
+                    },
+                    "render": [Function],
+                    "setup": [Function],
+                  },
+                  "u": null,
+                  "uid": 2,
+                  "um": null,
+                  "update": [Function],
+                  "vnode": [Circular],
+                  "withProxy": null,
+                },
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": [
+                  "cards",
+                ],
+                "el": <div
+                  class="bank-card-list mb-7"
+                >
+                  <div
+                    class="container flex justify-between"
+                  >
+                    
+                    
+                  </div>
+                </div>,
+                "key": null,
+                "patchFlag": 8,
+                "props": {
+                  "cardSelector": [Function],
+                  "cards": [],
+                },
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 4,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "targetStart": null,
+                "transition": null,
+                "type": {
+                  "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/BankCardList.vue",
+                  "__name": "BankCardList",
+                  "props": {
+                    "cardSelector": {
+                      "default": [Function],
+                      "type": [Function],
+                    },
+                    "cards": {
+                      "required": true,
+                      "type": [Function],
+                    },
+                  },
+                  "render": [Function],
+                  "setup": [Function],
+                },
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": {
+                  "_": 1,
+                  "default": [Function],
+                },
+                "component": {
+                  "a": null,
+                  "accessCache": {
+                    "@@__IMMUTABLE_ITERABLE__@@": 0,
+                    "@@__IMMUTABLE_RECORD__@@": 0,
+                    "_isMockFunction": 0,
+                    "debounceDelay": 3,
+                    "hasAttribute": 0,
+                    "nodeType": 0,
+                    "onInput": 3,
+                    "tagName": 0,
+                    "toJSON": 0,
+                    Symbol(Symbol.toStringTag): 0,
+                  },
+                  "appContext": {
+                    "app": [Circular],
+                    "components": {
+                      "transition": {
+                        "name": "transition",
+                      },
+                      "transition-group": {
+                        "name": "transition-group",
+                      },
+                    },
+                    "config": {
+                      "compilerOptions": {},
+                      "errorHandler": undefined,
+                      "globalProperties": {},
+                      "isNativeTag": [Function],
+                      "optionMergeStrategies": {},
+                      "performance": false,
+                      "warnHandler": undefined,
+                    },
+                    "directives": {},
+                    "emitsCache": WeakMap {},
+                    "mixins": [
+                      {
+                        "beforeCreate": [Function],
+                      },
+                    ],
+                    "optionsCache": WeakMap {},
+                    "propsCache": WeakMap {},
+                    "provides": {},
+                    "reload": [Function],
+                  },
+                  "asyncDep": null,
+                  "asyncResolved": false,
+                  "attrs": {},
+                  "bc": null,
+                  "bm": null,
+                  "bu": null,
+                  "bum": null,
+                  "c": null,
+                  "components": null,
+                  "ctx": {
+                    "debounceDelay": 300,
+                    "onInput": [Function],
+                  },
+                  "da": null,
+                  "data": {},
+                  "devtoolsRawSetupState": {
+                    "manageInput": [Function],
+                    "props": {
+                      "debounceDelay": 300,
+                      "onInput": [Function],
+                    },
+                  },
+                  "directives": null,
+                  "ec": null,
+                  "effect": ReactiveEffect {
+                    "_depsLength": 1,
+                    "_dirtyLevel": 0,
+                    "_runnings": 0,
+                    "_shouldSchedule": false,
+                    "_trackId": 1,
+                    "active": true,
+                    "allowRecurse": true,
+                    "deps": [
+                      Map {
+                        [Circular] => 1,
+                      },
+                    ],
+                    "fn": [Function],
+                    "onTrack": undefined,
+                    "onTrigger": undefined,
+                    "scheduler": [Function],
+                    "trigger": [Function],
+                  },
+                  "emit": [Function],
+                  "emitsOptions": null,
+                  "emitted": null,
+                  "exposeProxy": null,
+                  "exposed": {},
+                  "inheritAttrs": undefined,
+                  "isDeactivated": false,
+                  "isMounted": true,
+                  "isUnmounted": false,
+                  "m": null,
+                  "next": null,
+                  "parent": [Circular],
+                  "props": {
+                    "debounceDelay": 300,
+                    "onInput": [Function],
+                  },
+                  "propsDefaults": {},
+                  "propsOptions": [
+                    {
+                      "debounceDelay": {
+                        "0": false,
+                        "1": true,
+                        "default": 300,
+                        "type": [Function],
+                      },
+                      "onInput": {
+                        "0": false,
+                        "1": true,
+                        "default": [Function],
+                        "type": [Function],
+                      },
+                    },
+                    [
+                      "onInput",
+                      "debounceDelay",
+                    ],
+                  ],
+                  "provides": {},
+                  "proxy": {
+                    "debounceDelay": 300,
+                    "onInput": [Function],
+                  },
+                  "refs": {},
+                  "render": [Function],
+                  "renderCache": [
+                    [Function],
+                  ],
+                  "root": [Circular],
+                  "rtc": null,
+                  "rtg": null,
+                  "scope": EffectScope {
+                    "_active": true,
+                    "cleanups": [],
+                    "detached": true,
+                    "effects": [
+                      ReactiveEffect {
+                        "_depsLength": 1,
+                        "_dirtyLevel": 0,
+                        "_runnings": 0,
+                        "_shouldSchedule": false,
+                        "_trackId": 1,
+                        "active": true,
+                        "allowRecurse": true,
+                        "deps": [
+                          Map {
+                            [Circular] => 1,
+                          },
+                        ],
+                        "fn": [Function],
+                        "onTrack": undefined,
+                        "onTrigger": undefined,
+                        "scheduler": [Function],
+                        "trigger": [Function],
+                      },
+                    ],
+                    "parent": undefined,
+                  },
+                  "setupContext": {
+                    "attrs": {},
+                    "emit": [Function],
+                    "expose": [Function],
+                    "slots": {
+                      "default": [Function],
+                    },
+                  },
+                  "setupState": {
+                    "manageInput": [Function],
+                    "props": {
+                      "debounceDelay": 300,
+                      "onInput": [Function],
+                    },
+                  },
+                  "slots": {
+                    "default": [Function],
+                  },
+                  "sp": null,
+                  "subTree": {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": ,
+                                "appContext": null,
+                                "children": [
+                                  {
+                                    "__v_isVNode": true,
+                                    "__v_skip": true,
+                                    "anchor": null,
+                                    "appContext": null,
+                                    "children": " Amount filter ",
+                                    "component": null,
+                                    "ctx": [Circular],
+                                    "dirs": null,
+                                    "dynamicChildren": null,
+                                    "dynamicProps": null,
+                                    "el":  Amount filter ,
+                                    "key": null,
+                                    "patchFlag": 0,
+                                    "props": null,
+                                    "ref": null,
+                                    "scopeId": null,
+                                    "shapeFlag": 8,
+                                    "slotScopeIds": null,
+                                    "ssContent": null,
+                                    "ssFallback": null,
+                                    "staticCount": 0,
+                                    "suspense": null,
+                                    "target": null,
+                                    "targetAnchor": null,
+                                    "targetStart": null,
+                                    "transition": null,
+                                    "type": Symbol(v-txt),
+                                  },
+                                ],
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": [],
+                                "dynamicProps": null,
+                                "el": ,
+                                "key": "_default",
+                                "patchFlag": 64,
+                                "props": {
+                                  "key": "_default",
+                                },
+                                "ref": null,
+                                "scopeId": null,
+                                "shapeFlag": 16,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "targetStart": null,
+                                "transition": null,
+                                "type": Symbol(v-fgt),
+                              },
+                            ],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el": <label
+                              class="p-3 block font-semibold"
+                              for="search-input"
+                            >
+                              
+                               Amount filter 
+                              
+                            </label>,
+                            "key": null,
+                            "patchFlag": 0,
+                            "props": {
+                              "class": "p-3 block font-semibold",
+                              "for": "search-input",
+                            },
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 17,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "targetStart": null,
+                            "transition": null,
+                            "type": "label",
+                          },
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": null,
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el": <input
+                              class="block w-full px-5 py-2 border-2 border-black rounded-md"
+                              id="search-input"
+                              placeholder="Amount"
+                              type="number"
+                            />,
+                            "key": null,
+                            "patchFlag": 32,
+                            "props": {
+                              "class": "block w-full px-5 py-2 border-2 border-black rounded-md",
+                              "id": "search-input",
+                              "onInput": [Function],
+                              "placeholder": "Amount",
+                              "type": "number",
+                            },
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 1,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "targetStart": null,
+                            "transition": null,
+                            "type": "input",
+                          },
+                        ],
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <div
+                          class="container"
+                        >
+                          <label
+                            class="p-3 block font-semibold"
+                            for="search-input"
+                          >
+                            
+                             Amount filter 
+                            
+                          </label>
+                          <input
+                            class="block w-full px-5 py-2 border-2 border-black rounded-md"
+                            id="search-input"
+                            placeholder="Amount"
+                            type="number"
+                          />
+                        </div>,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": {
+                          "class": "container",
+                        },
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 17,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "targetStart": null,
+                        "transition": null,
+                        "type": "div",
+                      },
+                    ],
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": ,
+                        "appContext": null,
+                        "children": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": " Amount filter ",
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el":  Amount filter ,
+                            "key": null,
+                            "patchFlag": 0,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 8,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "targetStart": null,
+                            "transition": null,
+                            "type": Symbol(v-txt),
+                          },
+                        ],
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": [],
+                        "dynamicProps": null,
+                        "el": ,
+                        "key": "_default",
+                        "patchFlag": 64,
+                        "props": {
+                          "key": "_default",
+                        },
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 16,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "targetStart": null,
+                        "transition": null,
+                        "type": Symbol(v-fgt),
+                      },
+                    ],
+                    "dynamicProps": null,
+                    "el": <div
+                      class="filter-transaction mb-20"
+                    >
+                      <div
+                        class="container"
+                      >
+                        <label
+                          class="p-3 block font-semibold"
+                          for="search-input"
+                        >
+                          
+                           Amount filter 
+                          
+                        </label>
+                        <input
+                          class="block w-full px-5 py-2 border-2 border-black rounded-md"
+                          id="search-input"
+                          placeholder="Amount"
+                          type="number"
+                        />
+                      </div>
+                    </div>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": {
+                      "class": "filter-transaction mb-20",
+                    },
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "targetStart": null,
+                    "transition": null,
+                    "type": "div",
+                  },
+                  "suspense": null,
+                  "suspenseId": 0,
+                  "type": {
+                    "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/FilterTransaction.vue",
+                    "__name": "FilterTransaction",
+                    "props": {
+                      "debounceDelay": {
+                        "default": 300,
+                        "type": [Function],
+                      },
+                      "onInput": {
+                        "default": [Function],
+                        "type": [Function],
+                      },
+                    },
+                    "render": [Function],
+                    "setup": [Function],
+                  },
+                  "u": null,
+                  "uid": 3,
+                  "um": null,
+                  "update": [Function],
+                  "vnode": [Circular],
+                  "withProxy": null,
+                },
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <div
+                  class="filter-transaction mb-20"
+                >
+                  <div
+                    class="container"
+                  >
+                    <label
+                      class="p-3 block font-semibold"
+                      for="search-input"
+                    >
+                      
+                       Amount filter 
+                      
+                    </label>
+                    <input
+                      class="block w-full px-5 py-2 border-2 border-black rounded-md"
+                      id="search-input"
+                      placeholder="Amount"
+                      type="number"
+                    />
+                  </div>
+                </div>,
+                "key": null,
+                "patchFlag": 0,
+                "props": {
+                  "debounceDelay": 300,
+                  "onInput": [Function],
+                },
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 36,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "targetStart": null,
+                "transition": null,
+                "type": {
+                  "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/FilterTransaction.vue",
+                  "__name": "FilterTransaction",
+                  "props": {
+                    "debounceDelay": {
+                      "default": 300,
+                      "type": [Function],
+                    },
+                    "onInput": {
+                      "default": [Function],
+                      "type": [Function],
+                    },
+                  },
+                  "render": [Function],
+                  "setup": [Function],
+                },
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": null,
+                "component": {
+                  "a": null,
+                  "accessCache": {
+                    "@@__IMMUTABLE_ITERABLE__@@": 0,
+                    "@@__IMMUTABLE_RECORD__@@": 0,
+                    "_isMockFunction": 0,
+                    "hasAttribute": 0,
+                    "nodeType": 0,
+                    "tagName": 0,
+                    "toJSON": 0,
+                    "transactions": 3,
+                    Symbol(Symbol.toStringTag): 0,
+                  },
+                  "appContext": {
+                    "app": [Circular],
+                    "components": {
+                      "transition": {
+                        "name": "transition",
+                      },
+                      "transition-group": {
+                        "name": "transition-group",
+                      },
+                    },
+                    "config": {
+                      "compilerOptions": {},
+                      "errorHandler": undefined,
+                      "globalProperties": {},
+                      "isNativeTag": [Function],
+                      "optionMergeStrategies": {},
+                      "performance": false,
+                      "warnHandler": undefined,
+                    },
+                    "directives": {},
+                    "emitsCache": WeakMap {},
+                    "mixins": [
+                      {
+                        "beforeCreate": [Function],
+                      },
+                    ],
+                    "optionsCache": WeakMap {},
+                    "propsCache": WeakMap {},
+                    "provides": {},
+                    "reload": [Function],
+                  },
+                  "asyncDep": null,
+                  "asyncResolved": false,
+                  "attrs": {},
+                  "bc": null,
+                  "bm": null,
+                  "bu": null,
+                  "bum": null,
+                  "c": null,
+                  "components": null,
+                  "ctx": {
+                    "transactions": [],
+                  },
+                  "da": null,
+                  "data": {},
+                  "devtoolsRawSetupState": {
+                    "TransactionContent": {
+                      "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/TransactionContent.vue",
+                      "__name": "TransactionContent",
+                      "props": {
+                        "amount": {
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "description": {
+                          "required": true,
+                          "type": [Function],
+                        },
+                      },
+                      "render": [Function],
+                      "setup": [Function],
+                    },
+                  },
+                  "directives": null,
+                  "ec": null,
+                  "effect": ReactiveEffect {
+                    "_depsLength": 2,
+                    "_dirtyLevel": 0,
+                    "_runnings": 0,
+                    "_shouldSchedule": false,
+                    "_trackId": 1,
+                    "active": true,
+                    "allowRecurse": true,
+                    "deps": [
+                      Map {
+                        [Circular] => 1,
+                      },
+                      Map {
+                        [Circular] => 1,
+                      },
+                    ],
+                    "fn": [Function],
+                    "onTrack": undefined,
+                    "onTrigger": undefined,
+                    "scheduler": [Function],
+                    "trigger": [Function],
+                  },
+                  "emit": [Function],
+                  "emitsOptions": null,
+                  "emitted": null,
+                  "exposeProxy": null,
+                  "exposed": {},
+                  "inheritAttrs": undefined,
+                  "isDeactivated": false,
+                  "isMounted": true,
+                  "isUnmounted": false,
+                  "m": null,
+                  "next": null,
+                  "parent": [Circular],
+                  "props": {
+                    "transactions": [],
+                  },
+                  "propsDefaults": {},
+                  "propsOptions": [
+                    {
+                      "transactions": {
+                        "0": false,
+                        "1": true,
+                        "required": true,
+                        "type": [Function],
+                      },
+                    },
+                    [],
+                  ],
+                  "provides": {},
+                  "proxy": {
+                    "transactions": [],
+                  },
+                  "refs": {},
+                  "render": [Function],
+                  "renderCache": [],
+                  "root": [Circular],
+                  "rtc": null,
+                  "rtg": null,
+                  "scope": EffectScope {
+                    "_active": true,
+                    "cleanups": [],
+                    "detached": true,
+                    "effects": [
+                      ReactiveEffect {
+                        "_depsLength": 2,
+                        "_dirtyLevel": 0,
+                        "_runnings": 0,
+                        "_shouldSchedule": false,
+                        "_trackId": 1,
+                        "active": true,
+                        "allowRecurse": true,
+                        "deps": [
+                          Map {
+                            [Circular] => 1,
+                          },
+                          Map {
+                            [Circular] => 1,
+                          },
+                        ],
+                        "fn": [Function],
+                        "onTrack": undefined,
+                        "onTrigger": undefined,
+                        "scheduler": [Function],
+                        "trigger": [Function],
+                      },
+                    ],
+                    "parent": undefined,
+                  },
+                  "setupContext": {
+                    "attrs": {},
+                    "emit": [Function],
+                    "expose": [Function],
+                    "slots": {},
+                  },
+                  "setupState": {
+                    "TransactionContent": {
+                      "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/TransactionContent.vue",
+                      "__name": "TransactionContent",
+                      "props": {
+                        "amount": {
+                          "required": true,
+                          "type": [Function],
+                        },
+                        "description": {
+                          "required": true,
+                          "type": [Function],
+                        },
+                      },
+                      "render": [Function],
+                      "setup": [Function],
+                    },
+                  },
+                  "slots": {},
+                  "sp": null,
+                  "subTree": {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": ,
+                            "appContext": null,
+                            "children": [],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": [],
+                            "dynamicProps": null,
+                            "el": ,
+                            "key": null,
+                            "patchFlag": 128,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": null,
+                            "shapeFlag": 16,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "targetStart": null,
+                            "transition": null,
+                            "type": Symbol(v-fgt),
+                          },
+                        ],
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <div
+                          class="container"
+                        >
+                          
+                          
+                        </div>,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": {
+                          "class": "container",
+                        },
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 17,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "targetStart": null,
+                        "transition": null,
+                        "type": "div",
+                      },
+                    ],
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": ,
+                        "appContext": null,
+                        "children": [],
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": [],
+                        "dynamicProps": null,
+                        "el": ,
+                        "key": null,
+                        "patchFlag": 128,
+                        "props": null,
+                        "ref": null,
+                        "scopeId": null,
+                        "shapeFlag": 16,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "targetStart": null,
+                        "transition": null,
+                        "type": Symbol(v-fgt),
+                      },
+                    ],
+                    "dynamicProps": null,
+                    "el": <div
+                      class="transaction-list"
+                    >
+                      <div
+                        class="container"
+                      >
+                        
+                        
+                      </div>
+                    </div>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": {
+                      "class": "transaction-list",
+                    },
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "targetStart": null,
+                    "transition": null,
+                    "type": "div",
+                  },
+                  "suspense": null,
+                  "suspenseId": 0,
+                  "type": {
+                    "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/TransactionList.vue",
+                    "__name": "TransactionList",
+                    "props": {
+                      "transactions": {
+                        "required": true,
+                        "type": [Function],
+                      },
+                    },
+                    "render": [Function],
+                    "setup": [Function],
+                  },
+                  "u": null,
+                  "uid": 4,
+                  "um": null,
+                  "update": [Function],
+                  "vnode": [Circular],
+                  "withProxy": null,
+                },
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": [
+                  "transactions",
+                ],
+                "el": <div
+                  class="transaction-list"
+                >
+                  <div
+                    class="container"
+                  >
+                    
+                    
+                  </div>
+                </div>,
+                "key": null,
+                "patchFlag": 8,
+                "props": {
+                  "transactions": [],
+                },
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 4,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "targetStart": null,
+                "transition": null,
+                "type": {
+                  "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/components/TransactionList.vue",
+                  "__name": "TransactionList",
+                  "props": {
+                    "transactions": {
+                      "required": true,
+                      "type": [Function],
+                    },
+                  },
+                  "render": [Function],
+                  "setup": [Function],
+                },
+              },
+            ],
+            "dynamicProps": null,
+            "el": ,
+            "key": null,
+            "patchFlag": 64,
+            "props": null,
+            "ref": null,
+            "scopeId": null,
+            "shapeFlag": 16,
+            "slotScopeIds": null,
+            "ssContent": null,
+            "ssFallback": null,
+            "staticCount": 0,
+            "suspense": null,
+            "target": null,
+            "targetAnchor": null,
+            "targetStart": null,
+            "transition": null,
+            "type": Symbol(v-fgt),
+          },
+          "suspense": null,
+          "suspenseId": 0,
+          "type": {
+            "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/App.vue",
+            "__name": "App",
+            "components": {},
+            "render": [Function],
+            "setup": [Function],
+          },
+          "u": null,
+          "uid": 1,
+          "um": null,
+          "update": [Function],
+          "vnode": [Circular],
+          "withProxy": null,
+        },
+        "ctx": [Circular],
+        "dirs": null,
+        "dynamicChildren": null,
+        "dynamicProps": null,
+        "el": ,
+        "key": null,
+        "patchFlag": 0,
+        "props": {
+          "ref": "VTU_COMPONENT",
+        },
+        "ref": {
+          "f": false,
+          "i": [Circular],
+          "k": undefined,
+          "r": "VTU_COMPONENT",
+        },
+        "scopeId": null,
+        "shapeFlag": 4,
+        "slotScopeIds": null,
+        "ssContent": null,
+        "ssFallback": null,
+        "staticCount": 0,
+        "suspense": null,
+        "target": null,
+        "targetAnchor": null,
+        "targetStart": null,
+        "transition": null,
+        "type": {
+          "__file": "/Users/danielerapisarda/projects/dr-web-cards-transactions/src/App.vue",
+          "__name": "App",
+          "components": {},
+          "render": [Function],
+          "setup": [Function],
+        },
+      },
+      "suspense": null,
+      "suspenseId": 0,
+      "type": {
+        "name": "VTU_ROOT",
+        "render": [Function],
+        "setup": [Function],
+      },
+      "u": null,
+      "uid": 0,
+      "um": null,
+      "update": [Function],
+      "vnode": {
+        "__v_isVNode": true,
+        "__v_skip": true,
+        "anchor": null,
+        "appContext": {
+          "app": [Circular],
+          "components": {
+            "transition": {
+              "name": "transition",
+            },
+            "transition-group": {
+              "name": "transition-group",
+            },
+          },
+          "config": {
+            "compilerOptions": {},
+            "errorHandler": undefined,
+            "globalProperties": {},
+            "isNativeTag": [Function],
+            "optionMergeStrategies": {},
+            "performance": false,
+            "warnHandler": undefined,
+          },
+          "directives": {},
+          "emitsCache": WeakMap {},
+          "mixins": [
+            {
+              "beforeCreate": [Function],
+            },
+          ],
+          "optionsCache": WeakMap {},
+          "propsCache": WeakMap {},
+          "provides": {},
+          "reload": [Function],
+        },
+        "children": null,
+        "component": [Circular],
+        "ctx": null,
+        "dirs": null,
+        "dynamicChildren": null,
+        "dynamicProps": null,
+        "el": ,
+        "key": null,
+        "patchFlag": 0,
+        "props": null,
+        "ref": null,
+        "scopeId": null,
+        "shapeFlag": 4,
+        "slotScopeIds": null,
+        "ssContent": null,
+        "ssFallback": null,
+        "staticCount": 0,
+        "suspense": null,
+        "target": null,
+        "targetAnchor": null,
+        "targetStart": null,
+        "transition": null,
+        "type": {
+          "name": "VTU_ROOT",
+          "render": [Function],
+          "setup": [Function],
+        },
+      },
+      "withProxy": null,
+    },
+    "_props": null,
+    "_uid": 0,
+    "component": [Function],
+    "config": {
+      "compilerOptions": {},
+      "errorHandler": undefined,
+      "globalProperties": {},
+      "isNativeTag": [Function],
+      "optionMergeStrategies": {},
+      "performance": false,
+      "warnHandler": undefined,
+    },
+    "directive": [Function],
+    "mixin": [Function],
+    "mount": [Function],
+    "provide": [Function],
+    "runWithContext": [Function],
+    "unmount": [Function],
+    "use": [Function],
+    "version": "3.4.34",
+  },
+  "__setProps": [Function],
+  "cleanUpCallbacks": [],
+  "componentVM": {},
+  "isDisabled": [Function],
+  "rootVM": {
+    "VTU_COMPONENT": {},
+  },
+  "wrapperElement": ,
+}
+`;
