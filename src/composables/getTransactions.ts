@@ -12,6 +12,4 @@ export default async function getTransactions(cardId: string, amountFilterValue:
   if (cardId in transactionsContainer) {
     return transactionsContainer[cardId].filter((item: Transaction) => item.amount >= amountFilterValue)
   }
-
-  return []
 }
