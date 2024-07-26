@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="transaction px-7 py-9 bg-gray-300 flex rounded-md">
+  <div class="transaction px-3 py-5 md:px-7 md:py-9 bg-gray-300 flex rounded-md">
     <div class="transaction__description basis-4/5">
       {{ description }}
     </div>

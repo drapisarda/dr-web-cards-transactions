@@ -3,7 +3,7 @@ const model = defineModel()
 </script>
 
 <template>
-  <div class="filter-transaction mb-20">
+  <div class="filter-transaction mb-10">
     <div class="container">
       <label for="search-input" class="p-3 block font-semibold">
         <slot />

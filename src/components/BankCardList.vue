@@ -16,11 +16,11 @@ defineProps({
 </script>
 
 <template>
-  <div class="bank-card-list mb-7">
-    <div class="container flex justify-between">
-      <div class="bank-card-list__item mb-2 basis-2/5" v-for="(item, index) in cards" :key="index"
+  <div class="bank-card-list mb-5">
+    <div class="container md:flex justify-between">
+      <div class="bank-card-list__item md:basis-2/5 mb-4 md:mb-0" v-for="(item, index) in cards" :key="index"
         @click="cardSelector(item.id)">
-        <BankCard :description="item.description" :id="item.id" />
+        <BankCard class="h-full" :description="item.description" :id="item.id" />
       </div>
     </div>
   </div>
