@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-import { debounce } from '@/utilities/debounce';
+import { debounce } from '@/composables/debounce';
 
+//TODO what about model?
 const props = defineProps({
   onInput: {
     type: Function,
@@ -12,7 +13,7 @@ const props = defineProps({
   }
 })
 
-const manageInput = debounce((e) => props.onInput(e), props.debounceDelay)
+const manageInput = debounce((e) => props.onInput(e.target.value), props.debounceDelay)
 </script>
 
 <template>

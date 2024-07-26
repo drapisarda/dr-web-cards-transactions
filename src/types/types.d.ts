@@ -11,5 +11,8 @@ export interface Transaction {
   amount: number;
 }
 
+export interface TransactionsContainer {
+  [key: string]: Transaction[];
+}
 // TODO for future implementation
 // export type CardType = 'private' | 'business' | 'hyper-business'
