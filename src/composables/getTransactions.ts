@@ -1,17 +1,23 @@
 import type { Transaction, TransactionsContainer } from "@/types/types";
+import axios from "axios";
 
-//TODO Write beter
 export default async function getTransactions(cardId: string, amountFilterValue: number = 0): Promise<Transaction[]> {
   if (!cardId) {
-    throw new Error("Invalid card selected")
+    throw new Error("Invalid card selected");
   }
-  
-  const transactionsModule = await import('../data/transactions_extended.json' as any)
-  const transactionsContainer : TransactionsContainer = transactionsModule.default
 
-  if (cardId in transactionsContainer) {
-    return transactionsContainer[cardId].filter((item: Transaction) => item.amount >= amountFilterValue)
+  try {
+    const response = await axios.get('/data/transactions_extended.json');
+    const transactionsContainer: TransactionsContainer = response.data;
+
+    if (cardId in transactionsContainer) {
+      return transactionsContainer[cardId].filter((item: Transaction) => item.amount >= amountFilterValue);
+    } else {
+      console.warn(`Card ID "${cardId}" not found in transactions`);
+      return [];
+    }
+  } catch (error) {
+    console.error("Error fetching transactions:", error);
+    return [];
   }
-  
-  return []
 }

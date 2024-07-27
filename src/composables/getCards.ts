@@ -1,17 +1,31 @@
 import type { Card } from "@/types/types";
+import axios from "axios";
 
-export default async function getCards(): Promise<Card[]> {
-  const cards = await import("@/data/cards.json" as any);
-  return cards.default;
+export async function getCards(): Promise<Card[]> {
+  try {
+    const response = await axios.get("/data/cards.json");
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching cards:", error);
+    return [];
+  }
 }
 
 export async function getCard(cardId: string): Promise<Card> {
-  const cards = await getCards()
-  const selectedCards = cards.filter((item: Card) => item.id === cardId)
+  try {
+    const cards = await getCards();
+    const selectedCards = cards.filter((item: Card) => item.id === cardId);
 
-  if (!selectedCards || selectedCards.length === 0) throw new Error('Impossible to find card')
-  if (selectedCards.length !== 1) throw new Error('Multiple cards.')
+    if (selectedCards.length === 0) {
+      throw new Error(`Card with ID "${cardId}" not found`);
+    }
+    if (selectedCards.length > 1) {
+      throw new Error(`Multiple cards found with ID "${cardId}"`);
+    }
 
-  return selectedCards[0]
+    return selectedCards[0];
+  } catch (error) {
+    console.error(`Error fetching card: "${cardId}"`, error);
+    throw error;
+  }
 }
-

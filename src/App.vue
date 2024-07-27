@@ -2,7 +2,7 @@
 import { onBeforeMount, ref, watch } from 'vue';
 import FilterTransaction from '@/components/FilterTransaction.vue';
 import TransactionList from '@/components/TransactionList.vue';
-import getCards, { getCard } from '@/composables/getCards'
+import { getCard, getCards } from '@/composables/getCards'
 import getTransactions from './composables/getTransactions';
 import BankCardList from './components/BankCardList.vue';
 import type { Card, Transaction } from './types/types';
