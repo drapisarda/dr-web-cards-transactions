@@ -1,10 +1,12 @@
 [
   {
     "id": "card-1",
-    "description": "Card number 1"
+    "description": "Card number 1",
+    "color": "#DEF9C4"
   },
   {
     "id": "card-2",
-    "description": "Card number 2"
+    "description": "Card number 2",
+    "color": "#FFDFD6"
   }
 ]
