@@ -1,6 +1,9 @@
 import type { Card } from "@/types/types";
 import axios from "axios";
 
+/*
+ * @deprecated this has to be fixed to fetch from a real API
+ */
 export async function getCards(): Promise<Card[]> {
   try {
     const response = await axios.get("/data/cards.json");
@@ -11,6 +14,9 @@ export async function getCards(): Promise<Card[]> {
   }
 }
 
+/*
+ * @deprecated this has to be fixed to fetch from a real API, possibly being combined with transactions
+ */
 export async function getCard(cardId: string): Promise<Card> {
   try {
     const cards = await getCards();

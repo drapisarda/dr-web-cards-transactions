@@ -1,13 +1,16 @@
 import type { Transaction, TransactionsContainer } from "@/types/types";
 import axios from "axios";
 
+/*
+ * @deprecated this has to be fixed to fetch from a real API
+ */
 export default async function getTransactions(cardId: string, amountFilterValue: number = 0): Promise<Transaction[]> {
   if (!cardId) {
     throw new Error("Invalid card selected");
   }
 
   try {
-    const response = await axios.get('/data/transactions_extended.json');
+    const response = await axios.get(`/data/transactions_extended.json?cardId=${cardId}`);
     const transactionsContainer: TransactionsContainer = response.data;
 
     if (cardId in transactionsContainer) {
