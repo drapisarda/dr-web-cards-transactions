@@ -5,7 +5,7 @@ const model = defineModel()
 <template>
   <div class="filter-transaction mb-10">
     <div class="container">
-      <label for="search-input" class="p-3 block font-semibold">
+      <label for="search-input" class="px-5 py-2 block font-semibold">
         <slot />
       </label>
       <input id="search-input" type="number" v-model="model" placeholder="Amount"
