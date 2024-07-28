@@ -1,10 +1,14 @@
 import type { Card } from "@/types/types";
 import axios from "axios";
+import fakeApiLatency from "./fakeApiLatency";
 
 /*
  * @deprecated this has to be fixed to fetch from a real API
  */
 export async function getCards(): Promise<Card[]> {
+
+  await fakeApiLatency(2000);
+
   try {
     const response = await axios.get("/data/cards.json");
     return response.data;
@@ -30,7 +34,7 @@ export async function getCard(cardId: string): Promise<Card> {
     }
 
     return selectedCards[0];
-  } catch (error) {
+  } catch (error: unknown) {
     console.error(`Error fetching card: "${cardId}"`, error);
     throw error;
   }

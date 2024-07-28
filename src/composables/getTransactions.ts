@@ -1,10 +1,14 @@
 import type { Transaction, TransactionsContainer } from "@/types/types";
 import axios from "axios";
+import fakeApiLatency from "./fakeApiLatency";
 
 /*
  * @deprecated this has to be fixed to fetch from a real API
  */
 export default async function getTransactions(cardId: string, amountFilterValue: number = 0): Promise<Transaction[]> {
+
+  await fakeApiLatency(2000);
+
   try {
     // WARNING this should be a call to a real backed-end API, the cardId parameter is here to simulate this.
     // the real filter is actually implemented in this composable function

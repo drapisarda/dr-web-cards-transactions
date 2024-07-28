@@ -20,12 +20,16 @@ onBeforeMount(async () => {
 
 //TODO filter on apiRequest so api call with card+amount or complex filter
 const selectCard = async (cardId: string) => {
+  if (cardId === selectedCard.value?.id) return
+
+  transactions.value = []
   selectedCard.value = await getCard(cardId)
   filterAmount.value = undefined
   await filterTransactions(filterAmount.value)
 }
 
 const filterTransactions = async (newAmount: number | undefined) => {
+  transactions.value = []
   filterAmount.value = newAmount
   if (!selectedCard.value) return
   transactions.value = await getTransactions(selectedCard.value.id, filterAmount.value)
@@ -33,7 +37,7 @@ const filterTransactions = async (newAmount: number | undefined) => {
 
 watch(filterAmount, debounce((newValue) => {
   filterTransactions(newValue)
-}, 300))
+}, 500))
 </script>
 
 <template>
