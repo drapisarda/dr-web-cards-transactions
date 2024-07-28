@@ -5,9 +5,9 @@ import BankCardList from '@/components/BankCardList.vue'
 
 describe('BankCardList', () => {
   const testCards = [
-    {id: '99', 'description': 'lorem ipsum'},
-    {id: '99', 'description': 'lorem ipsum'},
-    {id: '99', 'description': 'lorem ipsum'},
+    {id: '99', 'description': 'lorem ipsum', color: '#f0f'},
+    {id: '99', 'description': 'lorem ipsum', color: '#0ff'},
+    {id: '99', 'description': 'lorem ipsum', color: '#ff0'},
   ]
 
   const mockClickManage = vi.fn()
