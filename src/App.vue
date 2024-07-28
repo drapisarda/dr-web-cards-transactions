@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onBeforeMount, ref, watch } from 'vue';
-import FilterTransaction from '@/components/FilterTransaction.vue';
+import TransactionsFilter from '@/components/TransactionsFilter.vue';
 import TransactionList from '@/components/TransactionList.vue';
 import { getCard, getCards } from '@/composables/getCards'
 import getTransactions from './composables/getTransactions';
@@ -41,8 +41,8 @@ watch(filterAmount, debounce((newValue) => {
   </header>
   <main class="py-5 flex flex-col h-screen">
     <BankCardList :cards="cards" :cardSelector="selectCard" :selectedCardId="selectedCard?.id" />
-    <FilterTransaction v-model="filterAmount"> Amount filter
-    </FilterTransaction>
+    <TransactionsFilter v-model="filterAmount"> Amount filter
+    </TransactionsFilter>
     <TransactionList class="flex-1" :transactions="transactions" :color="selectedCard?.color" />
   </main>
 </template>

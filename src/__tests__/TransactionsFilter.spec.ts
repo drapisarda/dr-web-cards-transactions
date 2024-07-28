@@ -1,11 +1,11 @@
 import { describe, it, expect, vi } from 'vitest'
 
 import { mount } from '@vue/test-utils'
-import FilterTransaction from '@/components/FilterTransaction.vue'
+import TransactionsFilter from '@/components/TransactionsFilter.vue'
 
-describe('FilterTransaction', () => {
+describe('TransactionsFilter', () => {
   it('renders properly', async () => {
-    const wrapper = mount(FilterTransaction, {})
+    const wrapper = mount(TransactionsFilter, {})
     expect(wrapper).toMatchSnapshot
 
     const inputField = wrapper.find('input')
