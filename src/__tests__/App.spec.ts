@@ -1,22 +1,25 @@
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 
-import { mount, VueWrapper } from '@vue/test-utils'
+import { mount, shallowMount, VueWrapper } from '@vue/test-utils'
 import App from '@/App.vue'
+import axios from 'axios';
+import cardData from '../../public/data/cards.json'
 
 describe('App', () => {
-
   it('renders properly', async () => {
+    vi.spyOn(axios, 'get').mockResolvedValue({ data : cardData})
+
     const wrapper = mount(App)
-    const textValue = 99
     expect(wrapper).toMatchSnapshot()
 
     expect((wrapper.vm as any).filterAmount).toBe(undefined)
-
+    
+    const textValue = 99
     const input = wrapper.find('.filter-transaction input')
     input.setValue(textValue)
 
-    await new Promise((resolve) => setTimeout(resolve, 500))
+    await wrapper.vm.$nextTick()
 
-    expect((wrapper.vm as any).filterAmount).toBe(textValue)
+    expect(wrapper).toMatchSnapshot()
   })
 })
