@@ -9,7 +9,7 @@ const model = defineModel()
         <slot />
       </label>
       <input id="search-input" type="number" v-model="model" placeholder="Amount"
-        class="block w-full px-5 py-2 border-2 border-black rounded-md">
+        class="block w-full px-5 py-2 border-2 border-black rounded-md hover:shadow-lg hover:shadow-slate-200 transition-shadow">
     </div>
   </div>
 </template>

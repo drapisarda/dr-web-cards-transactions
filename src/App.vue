@@ -27,7 +27,7 @@ const selectCard = async (cardId: string) => {
 
 const filterTransactions = async (newAmount: number | undefined) => {
   filterAmount.value = newAmount
-  if (!selectedCard || !selectedCard.value) return
+  if (!selectedCard.value) return
   transactions.value = await getTransactions(selectedCard.value.id, filterAmount.value)
 }
 
