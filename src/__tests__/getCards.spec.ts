@@ -1,10 +1,9 @@
-import { assert, describe, expect, it, vi } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { getCards, getCard } from "@/composables/getCards";
 import axios from "axios";
 import { afterEach } from "node:test";
 import type { Card } from "@/types/types";
 import cardsFixures from './fixtures/cards.json'
-import exp from "constants";
 
 describe('getCards composable', () => {
   afterEach(() => {
