@@ -43,7 +43,6 @@ watch(filterAmount, debounce((newValue) => {
     <BankCardList :cards="cards" :cardSelector="selectCard" :selectedCardId="selectedCard?.id" />
     <FilterTransaction v-model="filterAmount"> Amount filter
     </FilterTransaction>
-    <TransactionList class="flex-1 overflow-scroll md:overflow-auto" :transactions="transactions"
-      :color="selectedCard?.color" />
+    <TransactionList class="flex-1" :transactions="transactions" :color="selectedCard?.color" />
   </main>
 </template>

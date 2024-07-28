@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import type { PropType } from 'vue';
+import { computed, type PropType } from 'vue';
 import TransactionContent from './TransactionContent.vue';
 import { type Transaction } from '@/types/types';
+import { useVirtualList } from '@vueuse/core'
 
-defineProps({
+const props = defineProps({
   transactions: {
     type: Object as PropType<Transaction[]>,
     required: true
@@ -14,13 +15,25 @@ defineProps({
   }
 })
 
+const transactionList = computed(() => props.transactions)
+
+const { list, containerProps, wrapperProps } = useVirtualList(
+  transactionList,
+  {
+    itemHeight: 96, // h-[24] + py-5*2
+  },
+)
+
 </script>
 
 <template>
-  <div class="transaction-list">
+  <div class="transaction-list" v-bind="containerProps">
     <div class="container">
-      <div class="transaction-list__item mb-5" v-for="(item) in transactions" :key="item.id">
-        <TransactionContent :description="item.description" :amount="item.amount" :style="{ backgroundColor: color }" />
+      <div v-bind="wrapperProps">
+        <div class="transaction-list__item mb-5 h-[24]" v-for="{ index, data } in list" :key="index">
+          <TransactionContent :description="data.description" :amount="data.amount"
+            :style="{ backgroundColor: color }" />
+        </div>
       </div>
     </div>
   </div>
