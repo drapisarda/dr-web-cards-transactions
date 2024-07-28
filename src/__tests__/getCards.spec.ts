@@ -4,6 +4,7 @@ import axios from "axios";
 import { afterEach } from "node:test";
 import type { Card } from "@/types/types";
 import cardsFixures from './fixtures/cards.json'
+import exp from "constants";
 
 describe('getCards composable', () => {
   afterEach(() => {
@@ -42,14 +43,8 @@ describe('getCards composable', () => {
     const failingCardId = 'lorem'
     vi.spyOn(axios, 'get').mockResolvedValue({ data : testData })
 
-    try {
-      await getCard(failingCardId)
-    } catch (error: any) {
-      expect(error.message).toBe(`Card with ID "${failingCardId}" not found`)
-      return
-    }
-
-    assert.fail()
+    const card = getCard(failingCardId)
+    expect(card).rejects.toThrowError(`Card with ID "${failingCardId}" not found`)
   })
 
   it('getCard throws error on multiple resulting cards', async () => {
@@ -57,13 +52,7 @@ describe('getCards composable', () => {
     const duplicateCardId = cardsFixures[0].id
     vi.spyOn(axios, 'get').mockResolvedValue({ data : testData })
 
-    try {
-      await getCard(duplicateCardId)
-    } catch (error: any) {
-      expect(error.message).toBe(`Multiple cards found with ID "${duplicateCardId}"`)
-      return
-    }
-
-    assert.fail()
+    const cards = getCard(duplicateCardId)
+    expect(cards).rejects.toThrowError(`Multiple cards found with ID "${duplicateCardId}"`)
   })
 })
