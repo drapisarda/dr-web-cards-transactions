@@ -26,9 +26,16 @@ const { list, containerProps, wrapperProps } = useVirtualList(transactionList, {
   <div class="transaction-list" v-bind="containerProps">
     <div class="container">
       <div v-bind="wrapperProps">
-        <div class="transaction-list__item mb-5 h-[24]" v-for="{ index, data } in list" :key="index">
-          <TransactionContent :description="data.description" :amount="data.amount"
-            :style="{ backgroundColor: color }" />
+        <div
+          class="transaction-list__item mb-5 h-[24]"
+          v-for="{ index, data } in list"
+          :key="index"
+        >
+          <TransactionContent
+            :description="data.description"
+            :amount="data.amount"
+            :style="{ backgroundColor: color }"
+          />
         </div>
       </div>
     </div>

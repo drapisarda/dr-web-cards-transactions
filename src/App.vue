@@ -62,9 +62,11 @@ const filterTransactions = async (newAmount: number | undefined) => {
   transactions.value = await getTransactions(selectedCard.value.id, filterAmount.value)
 }
 
-watch(filterAmount, debounce((newValue: number | undefined) => {
-  filterTransactions(newValue)
-}, 500)
+watch(
+  filterAmount,
+  debounce((newValue: number | undefined) => {
+    filterTransactions(newValue)
+  }, 500)
 )
 </script>
 
