@@ -10,6 +10,8 @@ export default async function getTransactions(cardId: string, amountFilterValue:
   }
 
   try {
+    // TODO this should be a call to a real backed-end API, the cardId parameter is here to simulate this.
+    // the real filter is actually implemented in this composable function
     const response = await axios.get(`/data/transactions_extended.json?cardId=${cardId}`);
     const transactionsContainer: TransactionsContainer = response.data;
 
