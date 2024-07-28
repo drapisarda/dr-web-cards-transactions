@@ -8,8 +8,21 @@ import BankCardList from './components/BankCardList.vue';
 import type { Card, Transaction } from './types/types';
 import { debounce } from './composables/debounce';
 
-const cards = ref<Card[]>()
-const transactions = ref<Transaction[]>([])
+const dummyCards: Card[] = [
+  { id: '#', description: '#', color: '#ebebeb' },
+  { id: '#', description: '#', color: '#ebebeb' },
+]
+
+const dummyTransactions: Transaction[] = Array.from(Array(12)).map(item => {
+  return {
+    id: '#',
+    amount: 0,
+    description: '#',
+  }
+})
+
+const cards = ref<Card[]>(dummyCards)
+const transactions = ref<Transaction[]>(dummyTransactions)
 const selectedCard = ref<Card>()
 const filterAmount = ref<number>()
 
@@ -22,14 +35,14 @@ onBeforeMount(async () => {
 const selectCard = async (cardId: string) => {
   if (cardId === selectedCard.value?.id) return
 
-  transactions.value = []
+  transactions.value = dummyTransactions
   selectedCard.value = await getCard(cardId)
   filterAmount.value = undefined
   await filterTransactions(filterAmount.value)
 }
 
 const filterTransactions = async (newAmount: number | undefined) => {
-  transactions.value = []
+  transactions.value = dummyTransactions
   filterAmount.value = newAmount
   if (!selectedCard.value) return
   transactions.value = await getTransactions(selectedCard.value.id, filterAmount.value)

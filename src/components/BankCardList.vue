@@ -6,7 +6,7 @@ import BankCard from './BankCard.vue';
 defineProps({
   cards: {
     type: Object as PropType<Card[]>,
-    default: []
+    default: [],
   },
   selectedCardId: {
     type: String,
