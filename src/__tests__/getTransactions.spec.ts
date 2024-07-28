@@ -20,10 +20,11 @@ describe('getTransactions composable', () => {
   })
 
   it('throws error on failing API call', async () => {
-    vi.spyOn(axios, 'get').mockRejectedValue(new Error('this is a test error'))
+    const errorMessage = 'this is a test error'
+    vi.spyOn(axios, 'get').mockRejectedValue(new Error(errorMessage))
 
     const failingCardId = 'lorem'
     const transactions = getTransactions(failingCardId)
-    expect(transactions).rejects.toThrowError(`Error fetching transactions for card: "${failingCardId}"`)
+    expect(transactions).rejects.toThrowError(`Error fetching transactions for card ${failingCardId}: "${errorMessage}"`)
   })
 })

@@ -19,6 +19,6 @@ export default async function getTransactions(cardId: string, amountFilterValue:
       return [];
     }
   } catch (error: unknown) {
-    throw new Error(`Error fetching transactions for card: "${cardId}"`);
+    throw new Error(`Error fetching transactions for card ${cardId}: "${error.message}"`);
   }
 }
