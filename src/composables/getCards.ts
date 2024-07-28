@@ -1,20 +1,19 @@
-import type { Card } from "@/types/types";
-import axios from "axios";
-import fakeApiLatency from "./fakeApiLatency";
+import type { Card } from '@/types/types'
+import axios from 'axios'
+import fakeApiLatency from './fakeApiLatency'
 
 /*
  * @deprecated this has to be fixed to fetch from a real API
  */
 export async function getCards(): Promise<Card[]> {
-
-  await fakeApiLatency(2000);
+  await fakeApiLatency(2000)
 
   try {
-    const response = await axios.get("/data/cards.json");
-    return response.data;
+    const response = await axios.get('/data/cards.json')
+    return response.data
   } catch (error) {
-    console.error("Error fetching cards:", error);
-    return [];
+    console.error('Error fetching cards:', error)
+    return []
   }
 }
 
@@ -23,19 +22,19 @@ export async function getCards(): Promise<Card[]> {
  */
 export async function getCard(cardId: string): Promise<Card> {
   try {
-    const cards = await getCards();
-    const selectedCards = cards.filter((item: Card) => item.id === cardId);
+    const cards = await getCards()
+    const selectedCards = cards.filter((item: Card) => item.id === cardId)
 
     if (selectedCards.length === 0) {
-      throw new Error(`Card with ID "${cardId}" not found`);
+      throw new Error(`Card with ID "${cardId}" not found`)
     }
     if (selectedCards.length > 1) {
-      throw new Error(`Multiple cards found with ID "${cardId}"`);
+      throw new Error(`Multiple cards found with ID "${cardId}"`)
     }
 
-    return selectedCards[0];
+    return selectedCards[0]
   } catch (error: unknown) {
-    console.error(`Error fetching card: "${cardId}"`, error);
-    throw error;
+    console.error(`Error fetching card: "${cardId}"`, error)
+    throw error
   }
 }

@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { computed, type PropType } from 'vue';
-import TransactionContent from './TransactionContent.vue';
-import { type Transaction } from '@/types/types';
+import { computed, type PropType } from 'vue'
+import TransactionContent from './TransactionContent.vue'
+import { type Transaction } from '@/types/types.d'
 import { useVirtualList } from '@vueuse/core'
 
 const props = defineProps({
   transactions: {
-    type: Object as PropType<Transaction[]>,
+    type: Array as PropType<Transaction[]>,
     required: true
   },
   color: {
@@ -17,13 +17,9 @@ const props = defineProps({
 
 const transactionList = computed(() => props.transactions)
 
-const { list, containerProps, wrapperProps } = useVirtualList(
-  transactionList,
-  {
-    itemHeight: 96, // h-[24] + py-5*2
-  },
-)
-
+const { list, containerProps, wrapperProps } = useVirtualList(transactionList, {
+  itemHeight: 96 // h-[24] + py-5*2
+})
 </script>
 
 <template>

@@ -1,9 +1,9 @@
-import { afterEach, assert, describe, expect, it, vi } from "vitest";
+import { afterEach, describe, expect, it, vi } from 'vitest'
 import transactionsFixures from './fixtures/transactions.json'
 import cardsFixures from './fixtures/cards.json'
-import axios from "axios";
-import getTransactions from "@/composables/getTransactions";
-import type { Card, TransactionsContainer } from "@/types/types";
+import axios from 'axios'
+import getTransactions from '@/composables/getTransactions'
+import type { Card, TransactionsContainer } from '@/types/types'
 
 describe('getTransactions composable', () => {
   afterEach(() => {
@@ -16,7 +16,9 @@ describe('getTransactions composable', () => {
     vi.spyOn(axios, 'get').mockResolvedValue({ data: testData })
 
     const transactionsForTheCard = await getTransactions(selectedCard.id)
-    expect(transactionsForTheCard).toStrictEqual(testData[selectedCard.id as keyof TransactionsContainer])
+    expect(transactionsForTheCard).toStrictEqual(
+      testData[selectedCard.id as keyof TransactionsContainer]
+    )
   })
 
   it('throws error on failing API call', async () => {
@@ -25,7 +27,9 @@ describe('getTransactions composable', () => {
 
     const failingCardId = 'lorem'
     const transactionsPromise = getTransactions(failingCardId)
-    expect(transactionsPromise).rejects.toThrowError(`Error fetching transactions for card ${failingCardId}: "${errorMessage}"`)
+    expect(transactionsPromise).rejects.toThrowError(
+      `Error fetching transactions for card ${failingCardId}: "${errorMessage}"`
+    )
   })
 
   it('throws error on not found card', async () => {

@@ -1,18 +1,18 @@
-import { describe, it, expect, vi } from 'vitest'
+import { describe, it, expect } from 'vitest'
 
 import { mount } from '@vue/test-utils'
 import TransactionList from '@/components/TransactionList.vue'
 
 describe('TransactionList', () => {
   const transactions = [
-    {id: '99', description: 'lorem ipsum', amount: 99},
-    {id: '99', description: 'lorem ipsum', amount: 99},
-    {id: '99', description: 'lorem ipsum', amount: 99},
+    { id: '99', description: 'lorem ipsum', amount: 99 },
+    { id: '99', description: 'lorem ipsum', amount: 99 },
+    { id: '99', description: 'lorem ipsum', amount: 99 }
   ]
 
   it('renders properly', async () => {
-    const wrapper = mount(TransactionList, { 
-      props: { transactions } 
+    const wrapper = mount(TransactionList, {
+      props: { transactions }
     })
 
     await wrapper.vm.$nextTick()

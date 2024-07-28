@@ -1,8 +1,8 @@
-import { describe, expect, it, vi } from "vitest";
-import { getCards, getCard } from "@/composables/getCards";
-import axios from "axios";
-import { afterEach } from "node:test";
-import type { Card } from "@/types/types";
+import { describe, expect, it, vi } from 'vitest'
+import { getCards, getCard } from '@/composables/getCards'
+import axios from 'axios'
+import { afterEach } from 'node:test'
+import type { Card } from '@/types/types'
 import cardsFixures from './fixtures/cards.json'
 
 describe('getCards composable', () => {
@@ -12,7 +12,7 @@ describe('getCards composable', () => {
 
   it('returns all data from axios call', async () => {
     const testData: Card[] = cardsFixures
-    vi.spyOn(axios, 'get').mockResolvedValue({ data : testData })
+    vi.spyOn(axios, 'get').mockResolvedValue({ data: testData })
 
     const cards = await getCards()
 
@@ -30,7 +30,7 @@ describe('getCards composable', () => {
   it('getCard returns a single card', async () => {
     const testData: Card[] = cardsFixures
     const selectedData = testData[0]
-    vi.spyOn(axios, 'get').mockResolvedValue({ data : testData })
+    vi.spyOn(axios, 'get').mockResolvedValue({ data: testData })
 
     const cards = await getCard(selectedData.id)
 
@@ -40,16 +40,19 @@ describe('getCards composable', () => {
   it('getCard throws error on not existing card', async () => {
     const testData: Card[] = cardsFixures
     const failingCardId = 'lorem'
-    vi.spyOn(axios, 'get').mockResolvedValue({ data : testData })
+    vi.spyOn(axios, 'get').mockResolvedValue({ data: testData })
 
     const card = getCard(failingCardId)
     expect(card).rejects.toThrowError(`Card with ID "${failingCardId}" not found`)
   })
 
   it('getCard throws error on multiple resulting cards', async () => {
-    const testData: Card[] = [cardsFixures[0], { ...cardsFixures[0], description: 'I am a duplicate' }]
+    const testData: Card[] = [
+      cardsFixures[0],
+      { ...cardsFixures[0], description: 'I am a duplicate' }
+    ]
     const duplicateCardId = cardsFixures[0].id
-    vi.spyOn(axios, 'get').mockResolvedValue({ data : testData })
+    vi.spyOn(axios, 'get').mockResolvedValue({ data: testData })
 
     const cards = getCard(duplicateCardId)
     expect(cards).rejects.toThrowError(`Multiple cards found with ID "${duplicateCardId}"`)

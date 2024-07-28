@@ -1,23 +1,23 @@
 <script setup lang="ts">
-import { onBeforeMount, ref, watch } from 'vue';
-import TransactionsFilter from '@/components/TransactionsFilter.vue';
-import TransactionList from '@/components/TransactionList.vue';
-import { getCard, getCards } from '@/composables/getCards'
-import getTransactions from './composables/getTransactions';
-import BankCardList from './components/BankCardList.vue';
-import type { Card, Transaction } from './types/types';
-import { debounce } from './composables/debounce';
+import { onBeforeMount, ref, watch } from 'vue'
+import TransactionsFilter from '@/components/TransactionsFilter.vue'
+import TransactionList from '@/components/TransactionList.vue'
+import { getCards } from '@/composables/getCards'
+import getTransactions from './composables/getTransactions'
+import BankCardList from './components/BankCardList.vue'
+import type { Card, Transaction } from './types/types'
+import { debounce } from './composables/debounce'
 
 const dummyCards: Card[] = [
   { id: '#', description: '#', color: '#ebebeb' },
-  { id: '#', description: '#', color: '#ebebeb' },
+  { id: '#', description: '#', color: '#ebebeb' }
 ]
 
-const dummyTransactions: Transaction[] = Array.from(Array(12)).map(item => {
+const dummyTransactions: Transaction[] = Array.from(Array(12)).map(() => {
   return {
     id: '#',
     amount: 0,
-    description: '#',
+    description: '#'
   }
 })
 
@@ -48,7 +48,7 @@ const selectCard = async (cardId: string) => {
   if (cards.value.length === 0) await updateCards()
 
   // finding card
-  selectedCard.value = cards.value.find(card => card.id === cardId)
+  selectedCard.value = cards.value.find((card) => card.id === cardId)
   filterAmount.value = undefined
   await filterTransactions(filterAmount.value)
 }
@@ -62,18 +62,17 @@ const filterTransactions = async (newAmount: number | undefined) => {
   transactions.value = await getTransactions(selectedCard.value.id, filterAmount.value)
 }
 
-watch(filterAmount, debounce((newValue) => {
+watch(filterAmount, debounce((newValue: number | undefined) => {
   filterTransactions(newValue)
-}, 500))
+}, 500)
+)
 </script>
 
 <template>
-  <header>
-  </header>
+  <header></header>
   <main class="py-5 flex flex-col h-screen">
     <BankCardList :cards="cards" :cardSelector="selectCard" :selectedCardId="selectedCard?.id" />
-    <TransactionsFilter v-model="filterAmount"> Amount filter
-    </TransactionsFilter>
+    <TransactionsFilter v-model="filterAmount"> Amount filter </TransactionsFilter>
     <TransactionList class="flex-1" :transactions="transactions" :color="selectedCard?.color" />
   </main>
 </template>
