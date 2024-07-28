@@ -21,7 +21,7 @@ const cardType = props.description.replace(' Card', '').toLowerCase()
 
 <template>
   <div
-    :class="[`bank-card bank-card--${cardType} rounded-xl bg-gray-300 px-5 py-2 pb-10 md:pb-20 cursor-pointer`, { 'shiner': isDummy }]">
+    :class="[`bank-card bank-card--${cardType} rounded-xl bg-gray-300 px-5 py-2 pb-10 md:pb-20 cursor-pointer`, { 'shiner cursor-default': isDummy }]">
     <div class="bank-card__id font-semibold"> {{ id }}</div>
     <div class=" bank-card__description">{{ description }}</div>
   </div>

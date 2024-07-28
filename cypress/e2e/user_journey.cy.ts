@@ -9,7 +9,7 @@ const countTransactionsBiggerThanAmount =
   (cardId: string, amount: number) => 
     selectedTransaction(cardId).filter(transaction => transaction.amount >= amount).length
 
-describe('My First Test', () => {
+describe('User journey test', () => {
 
   beforeEach(() => {
     cy.intercept('GET', `/data/cards.json`, { fixture: 'cards.json' }).as('getCards')
@@ -23,15 +23,21 @@ describe('My First Test', () => {
   it('visits the app root url and sees the default view: first card selected', () => {    
     const selectedCard = cardsData[0] as Card
     cy.get('.transaction-list .transaction').should('have.length', selectedTransaction(selectedCard.id).length)
+    cy.get('.transaction-list .transaction').eq(0).should('contain', selectedTransaction(cardsData[0].id)[0].description)
+    cy.get('.transaction-list .transaction').eq(0).should('contain', selectedTransaction(cardsData[0].id)[0].amount)
   })
 
   it('can switch from one card to the other', () => {
     cy.get('.bank-card-list .bank-card').eq(1).click()
     cy.wait(['@getTransactionsSecondCard'])
     cy.get('.transaction-list .transaction').should('have.length', selectedTransaction(cardsData[1].id).length)
+    cy.get('.transaction-list .transaction').eq(0).should('contain', selectedTransaction(cardsData[1].id)[0].description)
+    cy.get('.transaction-list .transaction').eq(0).should('contain', selectedTransaction(cardsData[1].id)[0].amount)
     cy.get('.bank-card-list .bank-card').eq(0).click()
     cy.wait(['@getTransactionsFirstCard'])
     cy.get('.transaction-list .transaction').should('have.length', selectedTransaction(cardsData[0].id).length)
+    cy.get('.transaction-list .transaction').eq(0).should('contain', selectedTransaction(cardsData[0].id)[0].description)
+    cy.get('.transaction-list .transaction').eq(0).should('contain', selectedTransaction(cardsData[0].id)[0].amount)
   })
 
   it('can filter properly', () => {

@@ -27,22 +27,36 @@ const selectedCard = ref<Card>()
 const filterAmount = ref<number>()
 
 onBeforeMount(async () => {
-  cards.value = await getCards()
+  await updateCards()
   await selectCard(cards.value[0].id)
 })
 
+const updateCards = async () => {
+  cards.value = dummyCards
+  cards.value = await getCards()
+}
+
 //TODO filter on apiRequest so api call with card+amount or complex filter
 const selectCard = async (cardId: string) => {
-  if (cardId === selectedCard.value?.id) return
+  if (cardId === selectedCard.value?.id || cardId === dummyCards[0].id) return
 
+  // reset UI
   transactions.value = dummyTransactions
-  selectedCard.value = await getCard(cardId)
+
+  // check if data are still available in the state and acts accordingly
+  // in this demo scenario it never happens organically
+  if (cards.value.length === 0) await updateCards()
+
+  // finding card
+  selectedCard.value = cards.value.find(card => card.id === cardId)
   filterAmount.value = undefined
   await filterTransactions(filterAmount.value)
 }
 
 const filterTransactions = async (newAmount: number | undefined) => {
+  // the reset is not needed here, but it is a good practice to do it anyway
   transactions.value = dummyTransactions
+
   filterAmount.value = newAmount
   if (!selectedCard.value) return
   transactions.value = await getTransactions(selectedCard.value.id, filterAmount.value)
