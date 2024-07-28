@@ -24,7 +24,16 @@ describe('getTransactions composable', () => {
     vi.spyOn(axios, 'get').mockRejectedValue(new Error(errorMessage))
 
     const failingCardId = 'lorem'
-    const transactions = getTransactions(failingCardId)
-    expect(transactions).rejects.toThrowError(`Error fetching transactions for card ${failingCardId}: "${errorMessage}"`)
+    const transactionsPromise = getTransactions(failingCardId)
+    expect(transactionsPromise).rejects.toThrowError(`Error fetching transactions for card ${failingCardId}: "${errorMessage}"`)
+  })
+
+  it('throws error on not found card', async () => {
+    const testData: TransactionsContainer = transactionsFixures
+    vi.spyOn(axios, 'get').mockResolvedValue({ data: testData })
+
+    const failingCardId = 'lorem'
+    const transactions = await getTransactions(failingCardId)
+    expect(transactions).toStrictEqual([])
   })
 })
