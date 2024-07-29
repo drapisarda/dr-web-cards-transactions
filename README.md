@@ -1,5 +1,7 @@
 # Daniele Rapisarda's Web Cards Transactions
 
+[Git Repository](https://github.com/drapisarda/dr-web-cards-transactions)
+
 This is the Daniele Rapisarda implementation of a technical assignment, during the recruitment
 process for a position as [Senior Frontend Developer at DKB Code Factory](https://boards.greenhouse.io/dkbcodefactory/jobs/4124790003)
 
@@ -10,6 +12,10 @@ process for a position as [Senior Frontend Developer at DKB Code Factory](https:
 The purpose of this task is to build a card and transactions overview page. The user should be able to select one of the cards, see it's transactions and be able to filter the transactions based on the amount.
 
 You will find an image in the folder /docs, it gives a visual overview of how the page is intended to look like.
+
+## Live Demo
+
+A live demo is available [here](https://dr-web-cards-transactions.vercel.app/)
 
 ## AC
 
