@@ -37,6 +37,10 @@ const { list, containerProps, wrapperProps } = useVirtualList(transactionList, {
             :style="{ backgroundColor: color }"
           />
         </div>
+
+        <div class="transaction-list__empty" v-show="list.length === 0">
+          <h3 class="text-xl font-semibold">No transactions found for this card and amount</h3>
+        </div>
       </div>
     </div>
   </div>
